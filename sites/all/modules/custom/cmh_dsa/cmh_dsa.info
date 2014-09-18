@@ -1,0 +1,7 @@
+name = Dsa Module
+description = DSA Module
+package = DSA Module
+core = 7.x
+
+files[] = cmh_dsa.module
+

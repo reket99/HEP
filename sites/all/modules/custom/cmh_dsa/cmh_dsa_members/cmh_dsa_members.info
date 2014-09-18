@@ -1,0 +1,7 @@
+name = Dsa Members
+description = DSA Members
+package = DSA Module
+core = 7.x
+
+files[] = cmh_dsa_members.module
+files[] = cmh_dsa_members.inc

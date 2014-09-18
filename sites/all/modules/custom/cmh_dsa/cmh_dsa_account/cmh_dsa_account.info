@@ -1,0 +1,7 @@
+name = Dsa Account Information
+description = DSA Account Information
+package = DSA Module
+core = 7.x
+
+files[] = cmh_dsa_account.module
+files[] = cmh_dsa_account.inc

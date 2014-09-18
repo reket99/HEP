@@ -1,0 +1,23 @@
+name = CMH Orange Theme
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/style.css
+
+regions[header] = Header
+regions[user_info] = User Info
+regions[logout] = Logout knowledge base
+regions[main_navigation] = Main Navigation
+regions[member_navigation] = Member Navigation
+regions[member_info] = Member Information
+regions[news_holder] = News Holder
+regions[content] = Content
+regions[footer_column] = Footer Column
+regions[policy] = Policy
+regions[social] = Social
+regions[secure] = Secure Logo
+regions[copyright] = Copyright
+
+; Information added by CTS
+version = "7.x"
+project = "MHRIL"

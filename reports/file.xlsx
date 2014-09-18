@@ -1,0 +1,151 @@
+Dsa_User_ID,Dsa_ID,Password,Email_ID,First_Name,Last_Name,DOB,Mailing_Address,Country_ID,State_ID,City_ID,Zip_Code,Other_Country,Other_State,Other_City,Country_Code,Area_Code,Telephone,MobileNumber,Business_Type,Industry,Current_Turnover,Office_Space,Experience,Rating,Enquiry,Token_Val,Token_Expiry,Status,Last_login_time,Successful_logins,Created,Modified
+1,4828,dcf1f5f3bf5a712ee6a2b1e03797d2c12f32abaa8a33015fdac125f30b6bd137,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+91,,,pradeeprathore01@gmail.com,pradeep,rathore,1984-11-08,"Bhadana ,ward no 42,
+kota",1,54,1066,324002,,,,,,,7737177372,,,,,,,,,,inactive,,0,"2012-05-11 20:44:52","0000-00-00 00:00:00"
+3,4911,77481362dc1bb55a5ad201ac85f9534302495cff354136d8238b510c6a34d7e6,medurimahesh@gmail.com,"Sree Gayathri",Enterprises,0000-00-00,,,,,,,,,,,,,,,,,,,,9e367fb5b7882ba755c0,"2013-11-12 11:15:26",active,"2014-02-17 15:15:36",127,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+4,2343,32c9c8362253c0dd5b9bd5c028b2eff81c70c78360e95b711f0c63135fdbe035,bhilwara.clubmahindra@gmail.com,"Lotus Vacation",,0000-00-00,,,,,,,,,,,,,,,,,,,,2a59840006bea15ab5f0,"2014-01-18 15:15:03",active,"2014-02-24 14:01:21",213,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+5,4904,8579d62c44ba7ab547ffffa93729e083cb1927e54b22d4a4d284870b9c731c77,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+7,2295,ed80ff96890ef2c803f868ee163a5df78121159f50a549cb3eafa168407ccd33,saket.uberoi@gmail.com,Saket,Uberoi,0000-00-00,,,,,,,,,,,,,,,,,,,,31b237c3785e6fa22398,"2013-11-22 20:23:19",active,"2014-02-22 16:57:42",336,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+8,3325,420388c0f65b8c8de2e707c4ad1dc68c988794bb9013603dfe1272882130919f,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,"2014-02-14 15:46:13",69,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+9,4515,0550350ee162bf39408c1e0ec19c11734a953c02048e6a710ab77f0a0484450d,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+10,4045,3c1ae141e8425b5c4bf08cf0db483402f9539afe0633c749d79e5eec1e26c504,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+11,4516,a3a8ae9554a403cc8ff1ab724c02c2d7e40226055bf757a27a704ef57302da39,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+1445,6321,,sashipatil@yahoo.com,"Krish Network",,,"1/11, Patil Ramangoud Complex, Main Road Parvathinagar,Bellary-583103",,,,,,,,,,,,,,,,,,,,,inactive,,0,"2013-11-08 17:40:19","0000-00-00 00:00:00"
+13,2949,11620af5b5f36a51a24b4a1f0056540d39f3d62631fdc474527ada4986a2822d,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+14,4334,1ef09de9f369de0ad55474dfc7922c8f2016d2602eb3f776401a0c06c0c9cbd3,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+15,2951,7f7791c793174971ec9f4e6e6aeac1b1c03ee2e36cb8451a6cc177cfe5241f57,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,"2014-02-18 20:28:08",41,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+17,2752,b4c0030fc878e97af0c1cfd91c8a76e408b21ec952926fa8115743c83db2eeb3,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,"2013-05-28 16:04:48",2,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+18,5010,864e819e45e3033801e60695cc524a18a8e9a3b394fb701dc3c140dc7b247bf4,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+19,4178,fb137290e85c2250302651687c5e53b14dc6b729b5d560afc7e39f2fff219ee8,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+20,2715,5ffb244788349e7e1e10db25861c9435ffece02aacd48d52c2d7a65bc55c03c1,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+21,3949,93ae86003b16416b609d9dd69c397ed0e0a2b9b5f16aa97117db92c04b25a3da,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+22,4041,189799975bc3d492a7972dc988175fca998d6582358ceee3c7d304d7a0768143,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,"2014-02-20 07:15:51",7,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+23,4704,8c664ce85811dde514f5727c63aa53a24097a82eeabd691923feed9eb8bcfa45,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+24,3920,f480b7157dfdba717550b2a6b065bf6d9ea09aa2c76b1916c4ab500359be171b,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+25,3235,b32547b36c1048a22db84129df22aa791ef5c3b9dda0592aaa162831f74a302c,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,"2014-02-07 15:51:16",15,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+26,2692,14c9e1ebd6189bfc79f6434f485be00f596815499576d0c3f35e8b394fa45c59,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,"2014-02-21 18:45:14",18,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+27,4829,a4993693db73884068cd01729a6bafae2c39d90e18934b18cf1def51feb97d28,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,,0,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+28,4758,a3e216539b670e7d0246fb8b1afa87e5c5c18d563807e3114d8905c7c48f4f13,saket.uberoi@linearconsultant.com,"Saket Uberoi ",,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,"2014-02-24 13:39:56",516,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+29,5236,bd1c30419c9699d459db1ae0eb3956d72456c6f8342f49972e0a8f20235dd6b4,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,"2013-10-23 05:10:36",4,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+30,4260,292dbee39d76f25130d208dac6467ff6e7027477c440071812676f8a2672fe89,,,,0000-00-00,,,,,,,,,,,,,,,,,,,,,,active,"2013-11-19 14:56:01",19,"2012-04-28 01:52:47","0000-00-00 00:00:00"
+31,,,baskar.d@mahindraholidays.com,Baskar,Devaraj,1983-09-22,Chennai,1,56,817,600050,,,,91,44,26540188,9986717358,,,,,,,,,,inactive,,0,"2012-04-28 05:24:58","0000-00-00 00:00:00"
+32,,,satya_mishra14@hotmail.com,Satyanarayan,Mishra,1979-07-05,"satyanarayan mishra",1,52,682,751019,,,,,,,9937685464,,,,,,,,,,inactive,,0,"2012-04-28 13:28:09","0000-00-00 00:00:00"
+33,,,subhadipbhattacharyaslg@gmail.com,"subhadip ",bhattacharya,1979-05-24,"32,swamiji sarani
+hakimpara 
+siliguri",1,59,1056,734001,,,,011,0353,2110222,09832032537,,,,,,,,,,inactive,,0,"2012-04-28 14:02:33","0000-00-00 00:00:00"
+34,,,andamanvihar@gmail.com,suneel,kumar,1980-02-18,"Andaman Vihar
+Tours and Travels
+Polytechnic Road
+Dollygunj
+Port Blair.",1,67,1,744103,,,,00,03192,259402,09434283893,,,,,,,,,,inactive,,0,"2012-04-28 16:11:28","0000-00-00 00:00:00"
+35,,,kamran@salamindia.co.in,KAMRAN,NAWAZ,1984-09-20,"210,BHATTI STREET",1,58,1050,244001,,,,0091,591,3204825,8410601369,,,,,,,,,,inactive,,0,"2012-04-28 16:19:30","0000-00-00 00:00:00"
+36,,,"dham.raju@gmail.com ",Raju,Singh,1978-04-07,"B-2,10/1,sector-9,
+millenium towers,
+sanpada",1,47,596,400705,,,,,,,9833089105,,,,,,,,,,inactive,,0,"2012-04-28 17:35:28","0000-00-00 00:00:00"
+37,,,swapnil.singh85@gmail.com,swapnil,singh,1985-05-04,"m/s i.p associates,majan more,singrauli",1,46,Other,486886,,,singrauli,,,,9754099777,,,,,,,,,,inactive,,0,"2012-04-28 21:36:48","0000-00-00 00:00:00"
+38,,,priti0312@gmail.com,preeti,mishra,1978-08-24,"3013/f lane no 10 ranjeet nagar delhi",1,60,278,110008,,,,,,,9312505045,,,,,,,,,,inactive,,0,"2012-04-29 19:04:16","0000-00-00 00:00:00"
+39,,,armaanyatra@gmail.com,Amandeep,Singh,1989-05-30,"Ground Floor,Guru Arjun Dev Nagar,Opp. Jalandhar Bus Stop,Samrala Chowk,Ludhiana-141008.",1,53,718,141008,,,,,,,9888824697,,,,,,,,,,inactive,,0,"2012-04-30 11:07:28","0000-00-00 00:00:00"
+40,,,smcomputerworld@gmail.com,"Mallikarjuna ",h,1975-09-11,"No 976, ITI layout Outer Ring Road Nagarabhavi ",1,44,428,560072,,,,,,,9900889461,,,,,,,,,,inactive,,0,"2012-04-30 13:17:41","0000-00-00 00:00:00"
+41,,,prabhu_dcis@yahoo.com,Prabhu,Chandran,1983-09-09,"39/2,HBR Colony, Mount Pleasant Road, Ooty-643001",1,56,1010,643001,,,,,,,9790089012,,,,,,,,,,inactive,,0,"2012-04-30 16:45:10","0000-00-00 00:00:00"
+42,,,akhilbansal007@yahoo.co.in,"Akhil ",Bansal,1978-08-11,"LG-22,45, Kartar Arcade, Raisen Road, Near CApital Petrol Pump, Bhopal",1,46,539,462023,,,,91,755,4272828,9893055840,,,,,,,,,,inactive,,0,"2012-04-30 18:37:15","0000-00-00 00:00:00"
+43,,,dr_nitin43@yahoo.com,Nitin,Nagrehca,1980-01-13,"still not booked",1,39,306,380061,,,,,,,,,,,,,,,,,inactive,,0,"2012-05-01 00:49:27","0000-00-00 00:00:00"
+44,,,shemmi86@yahoo.co.in,samariyas,"gafoor ",1986-10-13,"Shhammas mahal
+deli
+P.o. kalanad",1,45,Other,671317,,,kasaragod,,,,,,,,,,,,,,inactive,,0,"2012-05-01 01:57:10","0000-00-00 00:00:00"
+45,,,roger.clifton@yahoo.co.in,roger,clifton,1980-08-03,"E - 3, F - 2,DILSHAD COLONY,",1,60,278,110095,,,,,,,8800916257,,,,,,,,,,inactive,,0,"2012-05-01 03:57:03","0000-00-00 00:00:00"
+46,,,hmsheth411@gmail.com,Hitesh,Sheth,1958-11-04,"Flat No.502, Bldg No.18, Harsh Vihar Society, Shantinagar, Sector-1, Mira Road - East,",1,47,596,401107,,,,91,022,32267110,9594550055,,,,,,,,,,inactive,,0,"2012-05-01 13:39:26","0000-00-00 00:00:00"
+47,,,kiran.hegde@thermaxindia.com,KIRAN,HEGDE,1976-07-22,"#4, THERMAX LIMITED, OPP. SHOPPERS STOP SHIVAJINAGAR, 
+PUNE 411005",1,47,643,411005,,,,91,20,00000000,8007220100,,,,,,,,,,inactive,,0,"2012-05-01 17:04:57","0000-00-00 00:00:00"
+48,,,vensontourandtravels@yahoo.com,Shereen,Popli,1982-08-25,"WZ-131/A, Bodella Market, Vikas Puri, New Delhi - 110018",1,60,278,110018,,,,,,,9818022602,,,,,,,,,,inactive,,0,"2012-05-01 17:49:04","0000-00-00 00:00:00"
+49,,,karthik@gmail.com,Karthik,K,2009-01-03,"12,Chennai -2 ",1,56,817,600002,,,,,,,,,,,,,,,,,inactive,,0,"2012-05-01 17:59:31","0000-00-00 00:00:00"
+50,,,tarunnanda235@gmail.com,tarun,nanda,1958-06-11,"ward no-3,rairangpur,mayurbhanj,odisha",1,52,Other,757043,,,mayurbhanj,,,,9437239401,,,,,,,,,,inactive,,0,"2012-05-01 20:23:21","0000-00-00 00:00:00"
+51,,,srivathsvn@gmail.com,srivaths,varadharajan,1979-05-28,"Balaji Heights flat no 1303, plot no 123, new sec 50, seawoods, navimumbai",1,47,596,400706,,,,,,,9821390654,,,,,,,,,,inactive,,0,"2012-05-02 07:56:41","0000-00-00 00:00:00"
+52,,,info@travelbookingindia.com,"MD ZAFAR",KHAN,1982-10-31,"New Delhi-110096",1,60,278,110096,,,,,,,9811934074,,,,,,,,,,inactive,,0,"2012-05-02 12:15:37","0000-00-00 00:00:00"
+53,,,director@keptbug.com,Ashutosh,Parashar,1984-07-07,"Ashutosh Parashar
+Unchi Dankaur,Dankaur,G.B.Nagar,UP.203201",1,58,1081,203201,,,,91,5735,225090,919761973809,,,,,,,,,,inactive,,0,"2012-05-02 18:55:15","0000-00-00 00:00:00"
+54,,,thetravellobby@gmail.com,Rajiv,Arora,1978-10-26,"Shop No. 73, Sector - 7, Shopping Complex, Urban Estate, Karnal",1,41,1109,132001,,,,91,184,4030362,9813071377,,,,,,,,,,inactive,,0,"2012-05-03 17:41:17","0000-00-00 00:00:00"
+55,,,shajan@indianmoneywire.com,shajan,chirayath,1975-10-10,"702, I-42, Poonam Sagar Complex,
+Mira Road east
+Thane dt",1,47,596,401107,,,,91,22,9768449768,9768449768,,,,,,,,,,inactive,,0,"2012-05-03 22:07:07","0000-00-00 00:00:00"
+56,,,neha.ibs.doon@gmail.com,"Neha ",Jain,1986-11-18,"M-123 Naveen Shahdara",1,60,278,110032,,,,91,011,22322072,9971359679,,,,,,,,,,inactive,,0,"2012-05-04 00:31:26","0000-00-00 00:00:00"
+57,,,rajeevguptaindia@gmail.com,Rajeev,Gupta,1973-10-27,"1004, Tower 16, Orchid Petals, Sector 49, Sohna Road",1,41,374,122002,,,,,,,7500015000,,,,,,,,,,inactive,,0,"2012-05-04 08:57:10","0000-00-00 00:00:00"
+58,,,viraj.travels2010@gmail.com,Tashvin,Gusai,1982-03-14,"Opp dena Bank Anjar",1,39,1033,370110,,,,91,02836,245176,9537949149,,,,,,,,,,inactive,,0,"2012-05-04 11:20:25","0000-00-00 00:00:00"
+59,,,rajdinesh36@gmail.com,Dinesh,raj,1985-07-16,"Nivs Huts, No,62/2, AMC Road, Near Dindigul Scans,Dindigul.",1,56,1163,624001,,,,000,0451,2550667,09486368966,,,,,,,,,,inactive,,0,"2012-05-04 13:20:32","0000-00-00 00:00:00"
+60,,,G4GINUES@GMAIL.COM,GANESH,WARE,1984-05-31,"AT POST- JATEGAON, TAL- KARMALA, DIST- SOLAPUR",1,47,1080,413203,,,,,,,9011673300,,,,,,,,,,inactive,,0,"2012-05-04 14:17:59","0000-00-00 00:00:00"
+61,,,chanu0075@gmail.com,rajesh,waran,1988-05-17,"605, sullivan street",1,56,1007,641001,,,,,,,,,,,,,,,,,inactive,,0,"2012-05-04 16:38:47","0000-00-00 00:00:00"
+62,,,shilpa.rana23@gmail.com,Shilpa,Verma,1984-04-23,"Pocket A-8,
+141, ground floor,
+kalkaji Extension
+New Delhi",1,60,278,110019,,,,,,,9910800323,,,,,,,,,,inactive,,0,"2012-05-04 17:18:26","0000-00-00 00:00:00"
+63,,,meghabathe@gmail.com,Megha,Bathe,1981-10-24,"312-A, Arcadia Shopping Complex, Hiranandani Estate, Patlipada, Off G. B. Road, Thane (West)",1,47,1150,400607,,,,,,,9323713585,,,,,,,,,,inactive,,0,"2012-05-04 18:00:58","0000-00-00 00:00:00"
+64,,,sanjay3119@gmail.com,"Sanjay ",Mourya,1979-02-15,"496-Mau road, opp. jaiswal Kunj,Sidhari",1,58,Other,276001,,,Azamgarh,,,,9415834362,,,,,,,,,,inactive,,0,"2012-05-04 19:34:10","0000-00-00 00:00:00"
+65,,,sanjeev@sanjeevsharma.in,sanjeev,sharma,1976-01-20,"307 akansha trade center 156 kanchan bagh main road",1,46,529,452001,,,,91,731,4020490,9826701144,,,,,,,,,,inactive,,0,"2012-05-04 20:22:11","0000-00-00 00:00:00"
+66,,,harjigrace@gmail.com,singh,harjit,1970-06-01,"Sehmi Engg.Works,F-364,Phase-8B, Industrial Area, Ajitghar,Punjab",1,53,Other,160071,,,Ajitgarh,91,0172,2237985,09041173764,,,,,,,,,,inactive,,0,"2012-05-04 22:27:46","0000-00-00 00:00:00"
+67,,,pappa.marly@gmail.com,fawaz,ali,1986-08-06,"marleyil house
+paroor
+punnayurkulam
+thrissur
+kerala
+",1,45,1132,679561,,,,,,,09495712429,,,,,,,,,,inactive,,0,"2012-05-05 13:11:53","0000-00-00 00:00:00"
+68,,,sonammohite@yahoo.com,Sonam,Mohite,1988-09-30,"J.B.Nagar, Andheri.",1,47,596,400069,,,,,,,,,,,,,,,,,inactive,,0,"2012-05-05 15:06:18","0000-00-00 00:00:00"
+69,,,hiten@mavericksglobal.com,Hiten,Shah,1974-09-13,"Flat No.7,Jay Laxmi Bldg,M.G.Road,Opp.Bank Of India, Ghatkopar(West),",1,47,596,400086,,,,91,22,25122910,9892229240,,,,,,,,,,inactive,,0,"2012-05-05 19:12:09","0000-00-00 00:00:00"
+70,,,abhip2010@gmail.com,Avishek,Prasad,1986-09-27,"C/O Maniratnam
+Benachity
+Durgapur",1,59,155,713213,,,,,,,9332501339,,,,,,,,,,inactive,,0,"2012-05-06 12:05:46","0000-00-00 00:00:00"
+71,,,sksconsulting@hotmail.com,Sunil,Sharma,1967-04-18,"501 Gayatri Scot Villa, Road No.2 West marredpally, secunderabad",1,36,1029,500026,,,,91,40,40130723,9866662589,,,,,,,,,,inactive,,0,"2012-05-06 12:06:55","0000-00-00 00:00:00"
+72,,,MMGUPTA17@YAHOO.CO.IN,"MURLI MANOHAR",GUPTA,1976-12-12,"11 PREM NAGAR NATHUPURA NEW DELHI 110084",1,60,278,110084,,,,,,,9971626169,,,,,,,,,,inactive,,0,"2012-05-06 23:00:53","0000-00-00 00:00:00"
+73,,,tarunimaholidays@gmail.com,HEMANT,SHARMA,1968-05-31,"A - 15 KIRTI NAGAR
+FIRST FLOOR
+",1,60,278,110015,,,,,,,8374801122,,,,,,,,,,inactive,,0,"2012-05-07 09:34:46","0000-00-00 00:00:00"
+74,,,mnagaria@yahoo.com,Murtuza,Nagaria,1971-06-26,"120, Ashar Envlave, Kholshet Road, Dhokali Naka, Thane West ",1,47,1150,400607,,,,91,22,66756572,919821005506,,,,,,,,,,inactive,,0,"2012-05-07 12:35:40","0000-00-00 00:00:00"
+75,,,bhupeshashu@gmail.com,"Bhupesh ",Tyagi,1986-03-31,"45, Pankaj Viharshimla byepass road. Dehradun",1,80,991,248001,,,,,,,8006102444,,,,,,,,,,inactive,,0,"2012-05-07 14:37:22","0000-00-00 00:00:00"
+76,,,tzr10imthi@gmail.com,mohamed,imthiyas,1990-01-22,"2/35,e moulana jawahar st, therizhandur,kuttalam(tk),nagappattinam(dt). 609808",1,56,1171,609808,,,,,,,8939339383,,,,,,,,,,inactive,,0,"2012-05-07 18:15:40","0000-00-00 00:00:00"
+77,,,prasadattarde@gmail.com,prasad,attarde,1984-09-24,"7-A,Shubhakamna Soc.,Gandharva Nagari,Nashik Road,Nashik",1,47,1079,422101,,,,,,,7588816035,,,,,,,,,,inactive,,0,"2012-05-07 19:08:58","0000-00-00 00:00:00"
+78,,,smcomputerworld@gail.com,Mallikarjuna,H,1975-09-11,"No 976, ITI layout Blr",1,44,428,560072,,,,,,,9900889461,,,,,,,,,,inactive,,0,"2012-05-07 19:53:20","0000-00-00 00:00:00"
+79,,,baljinderj470@gmail.com,"baljinder ",singh,1989-01-12,sangrur,1,53,Other,148028,,,sangrur,,,,8146133443,,,,,,,,,,inactive,,0,"2012-05-08 07:34:58","0000-00-00 00:00:00"
+80,,,karthik.k@clubmahindra.com,karthik,k,1912-01-31,"7,street,
+chennai",1,56,817,600002,,,,,,,,,,,,,,,,,inactive,,0,"2012-05-08 10:22:01","0000-00-00 00:00:00"
+81,,,SR@SR.com,SR,SR,1915-01-01,1232,1,56,817,600002,,,,,,,,,,,,,,,,,inactive,,0,"2012-05-08 12:06:22","0000-00-00 00:00:00"
+82,,,mukeshsuhalka2020@gmail.com,mukesh,suhalka,1983-03-19,"8,central area
+udaipur
+raj",1,54,783,313002,,,,,,,9413091990,,,,,,,,,,inactive,,0,"2012-05-08 15:25:11","0000-00-00 00:00:00"
+83,,,deepugouda@gmail.com,pampangowda,gowda,1974-08-01,"opp icici bank sindhanoor. ",1,44,Other,584128,,,sindhanoor,,,,9986373092,,,,,,,,,,inactive,,0,"2012-05-08 15:29:12","0000-00-00 00:00:00"
+84,,,ff@ff.com,ff,ff,1912-01-01,ff,1,56,817,600002,,,,,,,,,,,,,,,,,inactive,,0,"2012-05-09 10:14:44","0000-00-00 00:00:00"
+85,,,sameetkhatavkar@gmail.com,Sameet,Khatavkar,1975-12-27,Kolhapur,1,47,1040,416003,,,,,,,9923990000,,,,,,,,,,inactive,,0,"2012-05-09 12:27:21","0000-00-00 00:00:00"
+86,,,ksrao.sms@gmail.com,kattamuri,srinivasarao,1970-05-10,"q.no.239-c   sector-8,  ukkunagaram, vizag-32 a.p ",1,36,100,530032,,,,,,,9494919949,,,,,,,,,,inactive,,0,"2012-05-09 22:05:02","0000-00-00 00:00:00"
+87,,,rajeshuddandi@gmail.com,U.V.N,RAJESH,1988-08-04,"s/o u.s.s. prasad
+d.no-2-383-1
+2nd ward, near sri rama cable n/w,Avanigadda
+Krishna Dist ",1,36,98,521121,,,,,,,09032999979,,,,,,,,,,inactive,,0,"2012-05-10 12:04:33","0000-00-00 00:00:00"
+88,,,dhirender_2@yahoo.co.in,"dhirender ",rawat,1978-11-29,"c-2/349, aya nagar phase 4",1,60,278,110047,,,,,,,9899235323,,,,,,,,,,inactive,,0,"2012-05-10 22:11:26","0000-00-00 00:00:00"
+89,,,jaydeep.adesara@gmail.com,Jaydeep,Adesara,1991-05-07,"FF24 SHREEMAD BHAVAN 2nd FLOOR OPP KANTASTRI VIKASH GRUH SCHOOL RAJKOT",1,39,1104,360001,,,,,,,9974850596,,,,,,,,,,inactive,,0,"2012-05-11 12:54:54","0000-00-00 00:00:00"
+90,,,edak123@gmail.com,"Anil ",koshy,1979-05-05,"P O 5622
+Doha - Qatar",1,Other,Other,689503,,Qatar,Doha,00,974,30293075,0097430293075,,,,,,,,,,inactive,,0,"2012-05-11 14:13:35","0000-00-00 00:00:00"
+92,,,ramapowerrajasthan@gmail.com,Sanjay,Apurva,1973-07-01,"RAMA POWER
+RANI BAZAR
+BIKANER
+RAJASTHAN",1,54,745,334001,,,,,,,919351555189,,,,,,,,,,inactive,,0,"2012-05-12 00:35:11","0000-00-00 00:00:00"
+93,,,jgirishan@rediffmail.com,"Srividhya Girishan",Jagadeesan,1968-10-22,"117-A, 1st cross street, South jaganatha nagar
+villivakkam, chennai - 60049",1,56,817,600049,,,,91,044,26174660,8148080016,,,,,,,,,,inactive,,0,"2012-05-12 14:05:01","0000-00-00 00:00:00"
+94,,,anuca2008@rediffmail.com,Anurag,Maheshwari,1980-08-27,"Near Subji Mandi",1,46,Other,466001,,,,91,07562,225420,9424140883,,,,,,,,,,inactive,,0,"2012-05-12 14:13:24","0000-00-00 00:00:00"
+95,,,bhardwajparveen.76@gmail.com,Parveen,Bhardwaj,1976-10-31,"B-11,
+Crimson Floors,
+The Essentia, 
+Opp. Power Grid, Alwar Bye Pass Road, 
+Bhiwadi-301018",1,54,735,301018,,,,91,1460,235492,9829313232,,,,,,,,,,inactive,,0,"2012-05-12 19:08:27","0000-00-00 00:00:00"
+96,,,sssfortuneforex@gmail.com,VISWANATH,REDDY,1976-05-06,"dNO 4-2-7 1/3 RAMANNAPET NEAR LAKSHMIPURAM GUNTUR",1,36,Other,522007,,,GUNTUR,91,0863,2211779,09849096183,,,,,,,,,,inactive,,0,"2012-05-13 12:25:38","0000-00-00 00:00:00"
+97,,,sushilkumarpunjabi@rediffmaill.com,sushilkumar,punjabi,1968-02-29,"sona enterprises
+22/23 krishna kamal complex,near mnc dhule",1,47,Other,424001,,,dhule,91,2562,278761,9422219293,,,,,,,,,,inactive,,0,"2012-05-13 13:55:30","0000-00-00 00:00:00"
+98,,,neharj@gmail.com,NEHA,JAIN,1983-10-05,"MR NITIN JAIN 
+PRACHIAROMATICS
+HALSEY ROAD
+MONIKA COMPLEX 
+KANPUR",1,58,1052,280632,,,,0512,00000,000000,8005186159,,,,,,,,,,inactive,,0,"2012-05-13 19:09:44","0000-00-00 00:00:00"
+99,,,sriansk@gmail.com,sriyans,Khandelwal,1989-03-10,"c/o S.S.Sharma,luckier road,garrikhana,opp. durga mandir,shillong-2",1,49,668,793002,,,,,,,9402131979,,,,,,,,,,inactive,,0,"2012-05-14 08:18:12","0000-00-00 00:00:00"
+100,,,transoceanmaddy@gmail.com,Akhilesh,Uniyal,1980-01-11,"2/1 Dobhalwala dehradun",1,80,991,248001,,,,91,0135,2654491,9368501200,,,,,,,,,,inactive,,0,"2012-05-14 10:00:15","0000-00-00 00:00:00"
+101,,,sandeep123k@rediffmail.com,sandeep,khot,1983-06-01,"Ganesh Nagar , New Sangavi, pune",1,47,643,411027,,,,,,,09158875315,,,,,,,,,,inactive,,0,"2012-05-14 12:06:45","0000-00-00 00:00:00"
+102,,,satyam_manishg@rediffmail.com,"manish ",gupta,1973-06-26,"satyam digital
+1st floor,
+opp. diwani kachhari south gate, charuchandrapuri gate, kasia road,",1,58,1051,273001,,,,,,,9838734696,,,,,,,,,,inactive,,0,"2012-05-14 15:18:36","0000-00-00 00:00:00"
+103,,,sanjaygdps.jani@gmail.com,SANJAY,JANI,1969-07-31,"VANDANA ONLINE SERVICE MAIN ROAD KHARIAR ROAD 766104
+DIST NUAPADA ODISHA",1,52,Other,766104,,,"KHARIAR ROAD",91,6678,222956,9658109901,,,,,,,,,,inactive,,0,"2012-05-14 16:47:19","0000-00-00 00:00:00"

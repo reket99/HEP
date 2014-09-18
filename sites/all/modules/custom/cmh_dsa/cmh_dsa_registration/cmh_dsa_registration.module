@@ -1,0 +1,99 @@
+<?php
+/**
+ * @file         cmh_dsa.module
+ * @version      1.0.0
+ * @author       CTS
+ * @desc         This is a DAS Login file
+ * @date         10/07/2013
+ * @copyright    Copyright (c) 2013, Club Mahindra Holidays.  All rights reserved.
+ *               Property of Club Mahindra Holidays.  This file cannot be used or altered
+ *               in anyway without expressed written permission from 
+ *               Club Mahindra Holidays.
+ * @modified by  
+ * @modified on  
+ * @desc  
+ */
+/**
+ * @desc   - Implementation of hook_menu().Define menu items and page callbacks. 
+ * @access - public
+ * @param  - NULL
+ * @return - An array containing the menus/page links for the module. 
+ */
+function cmh_dsa_registration_menu() {
+
+  /* Registration Form */
+  $items['DsaRegister'] = array(
+    'title' => 'Club Mahindra',
+    'file' => 'cmh_dsa_registration.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('cmh_dsa_register_form'),
+    'access callback' => TRUE,
+    'access arguments' => array('dsa anonymous'),
+  );
+  /* Ajax call functions for populating the state and city dropdown */
+  $items['fill_drop_down_list'] = array(
+    'file' => 'cmh_dsa_registration.inc',
+    'page callback' => 'fill_drop_down',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  /* Ajax call functions for checking email id exist in DB or not */
+  $items['check_mail'] = array(
+    'file' => 'cmh_dsa_registration.inc',
+    'page callback' => 'check_emailid',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * @desc   - Implements hook_theme().
+ * @access - public
+ * @param  - NULL
+ * @return - Returns an array of details of theme for each form.
+ */
+function cmh_dsa_registration_theme() {
+  return array(
+    /* For Registration Form */
+    'dsa_registration' => array(
+      'render element' => 'form',
+      'template' => 'templates/cmh_dsa_registration',
+    ),
+  );
+}
+/**
+ * @desc   - Assign the elements of the DSA Registration form to variables so the themer can use those values to control how the
+ *       form elements are displayed, or alternatively displaying the whole form as constructed above.
+ * @access - public
+ * @param  - $variables : Elements of the form
+ * @return - NULL
+ */
+function template_preprocess_dsa_registration(&$variables) {
+
+  drupal_add_library('jquery_plugin', 'thickbox');
+  drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/thickbox.css');
+  drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/jquery.selectBox.css');
+  drupal_add_js(drupal_get_path('module', 'jquery_plugin') . '/jquery.maxlength.js');
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa_registration') . '/js/cmh_dsa_registration.js');
+  $variables['dsa_registration'] = array();
+  $hidden = array();
+  foreach (element_children($variables['form']) as $key) {
+    $type = $variables['form'][$key]['#type'];
+    if ($type == 'hidden' || $type == 'token') {
+      $hidden[] = drupal_render($variables['form'][$key]);
+    }
+    else {
+      $variables['dsa_registration'][$key] = drupal_render($variables['form'][$key]);
+    }
+  }
+  /* Fetch data for Registration page top header content */
+  $variables['dsa_registration']['top_header'] = get_registration_page_content('Top Header');
+  /* Fetch data for Registration page left panel content */
+  $variables['dsa_registration']['left_panel'] = get_registration_page_content('Left Panel', 'left_panel_image_set');
+    
+  // Hidden form elements have no value to themers. No need for separation.
+  $variables['dsa_registration']['hidden'] = implode($hidden);
+  // Collect all form elements to make it easier to print the whole form.
+  $variables['dsa_registration_form'] = implode($variables['dsa_registration']);
+}

@@ -1,0 +1,108 @@
+<?php
+/**
+ * @file         cmh_dsa_availability.module
+ * @version      1.0.0
+ * @author       CTS
+ * @desc         This is a DAS Login file
+ * @date         29/10/2013
+ * @copyright    Copyright (c) 2013, Club Mahindra Holidays.  All rights reserved.
+ *               Property of Club Mahindra Holidays.  This file cannot be used or altered
+ *               in anyway without expressed written permission from 
+ *               Club Mahindra Holidays.
+ * @modified by  
+ * @modified on  
+ * @desc  
+ */
+ 
+/**
+ * @desc   - Implementation of hook_menu().Define menu items and page callbacks. 
+ * @access - public
+ * @param  - NULL
+ * @return - An array containing the menus/page links for the module. 
+ */
+function cmh_dsa_availability_menu() {
+
+  /* For DSA Availability */
+  $items['DsaAvailability'] = array(
+    'title' => 'Club Mahindra',
+    'file' => 'cmh_dsa_availability.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('cmh_dsa_resort_availability_form'),
+    'access callback' => TRUE,
+    'access arguments' => array('dsa anonymous'),
+  );
+  /* Ajax call functions for getting resorts options according to sub-category*/
+  $items['HolidayPlanResorts'] = array(
+    'file' => 'cmh_dsa_availability.inc',
+    'page callback' => 'get_resorts_list',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  /* Ajax call functions for getting resorts availability*/
+  $items['BookingDisplayAvailability'] = array(
+    'file' => 'cmh_dsa_availability.inc',
+    'page callback' => 'get_resorts_availability',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  /* Ajax call functions for getting resorts availability*/
+  $items['SendAvailabilityMail'] = array(
+    'file' => 'cmh_dsa_availability.inc',
+    'page callback' => 'send_availability_mail',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  ); 
+  return $items;
+}
+
+/**
+ * @desc   - Implements hook_theme().
+ * @access - public
+ * @param  - NULL
+ * @return - Returns an array of details of theme for each form.
+ */
+function cmh_dsa_availability_theme() {
+  return array(
+    /*For DSA Availability form*/
+      'cmh_dsa_resort_availability' => array(
+      'render element' => 'form',
+      'template' => 'templates/cmh_dsa_availability',
+    ),      
+  );
+}
+
+/**
+ * @desc   - Assign the elements of the DSA Resort Availabilty form to variables so the themer can use those values to control how the
+ *         form elements are displayed, or alternatively displaying the whole form as constructed above.
+ * @access - public
+ * @param  - $variables : Elements of the form
+ * @return - NULL
+ */
+function template_preprocess_cmh_dsa_resort_availability(&$variables) {
+  drupal_add_library('jquery_plugin', 'thickbox');
+  drupal_add_library('jquery_plugin', 'datepick');
+  drupal_add_library('jquery_plugin', 'datepick_custom');
+  drupal_add_library('jquery_plugin', 'jscrollpane');
+  drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/thickbox.css');
+  drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/jquery.datepick.css');
+  drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/jquery.jscrollpane.css');
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa_availability') . '/js/cmh_dsa_availability.js');
+  
+  $variables['dsa_resort_availability'] = array();
+  $hidden = array();
+  
+  foreach (element_children($variables['form']) as $key) {
+    $type = $variables['form'][$key]['#type'];
+    if ($type == 'hidden' || $type == 'token') {
+      $hidden[] = drupal_render($variables['form'][$key]);
+    } 
+    else {
+      $variables['dsa_resort_availability'][$key] = drupal_render($variables['form'][$key]);
+    }
+  }
+  // Hidden form elements have no value to themers. No need for separation.
+  $variables['dsa_resort_availability']['hidden'] = implode($hidden);
+  
+  // Collect all form elements to make it easier to print the whole form.
+  $variables['dsa_resort_availability_form'] = implode($variables['dsa_resort_availability']);
+}

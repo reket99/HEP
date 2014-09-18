@@ -1,0 +1,73 @@
+<?php
+/**
+ * @file         cmh_dsa_members.module
+ * @version      1.0.0
+ * @author       CTS
+ * @desc         This is a DAS Login file
+ * @date         10/16/2013
+ * @copyright    Copyright (c) 2013, Club Mahindra Holidays.  All rights reserved.
+ *               Property of Club Mahindra Holidays.  This file cannot be used or altered
+ *               in anyway without expressed written permission from 
+ *               Club Mahindra Holidays.
+ * @modified by  
+ * @modified on  
+ * @desc  
+ */
+
+/**
+ * @desc   - Implementation of hook_menu().Define menu items and page callbacks. 
+ * @access - public
+ * @param  - NULL
+ * @return - An array containing the menus/page links for the module. 
+ */
+function cmh_dsa_members_menu() {
+  /* For DSA Search Member */
+  $items['DsaSearchMember'] = array(
+    'title' => 'Mahindra Holidays and Resorts',
+    'file' => 'cmh_dsa_members.inc',
+    'page callback' => 'cmh_dsa_search_member',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  /* For DSA Member Details*/
+  $items['DsaMember/MemberDetails'] = array(
+    'title' => 'Mahindra Holidays and Resorts',
+    'file' => 'cmh_dsa_members.inc',
+    'page callback' => 'get_member_profile',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );    
+  /* For DSA Member Contract Info*/
+  $items['DsaMember/MemberInformation'] = array(
+    'title' => 'Mahindra Holidays and Resorts',
+    'file' => 'cmh_dsa_members.inc',
+    'page callback' => 'get_member_contract',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );    
+  /* For DSA Member HUS*/
+  $items['DsaMember/HUS'] = array(
+    'title' => 'Mahindra Holidays and Resorts',
+    'file' => 'cmh_dsa_members.inc',
+    'page callback' => 'get_member_hub',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );    
+  /* For DSA Member Payment Details*/
+  $items['DsaMember/PaymentHistory'] = array(
+    'title' => 'Mahindra Holidays and Resorts',
+    'file' => 'cmh_dsa_members.inc',
+    'page callback' => 'get_member_phistory',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );    
+  return $items;
+}

@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<?php
+
+		Header('Cache-Control: no-cache');
+
+		Header('Pragma: no-cache');
+
+	?>
+
+	<title>Mahindra Holidays and Resorts</title>
+
+	<base href="https://members.clubmahindra.com/" />
+
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+
+	<meta name="revisit-after" content="14 days">
+
+	<meta name="google-site-verification" content="Eh2x3w1I04AIZpy2arbu4Wm_j_vAIkbJFuhjvepZcjs" />
+
+	<meta name="msvalidate.01" content="B17DB3A3434BA47CE816D2DC8ED9CF7A" />
+
+	<link rel="shortcut icon" href="/includes/theme_green/images/favicon.ico" />
+
+	<link rel="icon" href="/includes/theme_green/images/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" href="/includes/theme_green/css/reset.1.css" />
+
+	<link rel="stylesheet" type="text/css" href="/includes/theme_green/css/jquery.selectBox.1.css"/>
+
+	<link rel="stylesheet" type="text/css" href="/includes/theme_green/css/style.1.css" />
+
+	<link rel="stylesheet" type="text/css" href="/includes/theme_green/css/thickbox.1.css"/>
+
+	<link rel="stylesheet" type="text/css" href="/includes/theme_green/css/jquery.datepick.1.css"/>
+
+	<link rel="stylesheet" type="text/css" href="/includes/theme_green/css/jquery.jscrollpane.1.css"/>
+
+	<script  type="text/javascript">
+
+	var SITE_URL = '/';
+
+	var SITE_PROJECT_FOLDER = '';
+
+	var HTTP_URL='http://localhost/';
+
+	var HTTPS_URL='https://localhost/';
+
+	var PROCESSING = "<img src="+SITE_URL+SITE_PROJECT_FOLDER+"includes/theme_green/images/ajaxProcessing.gif alt='Loading'/><span class='ajaxLoadingText'>Logging in - Please Wait!</span>";
+
+	var LOADING = "<span class='ajaxLoadingText'>Loading Please Wait!</span>";
+
+	var WAITING = "<img src="+SITE_URL+SITE_PROJECT_FOLDER+"includes/theme_green/images/ajaxProcessing.gif alt='Loading'/><span class='ajaxLoadingText'>Loading Please Wait!</span>";
+
+	var CURRENT_DATE = '19-07-2013';
+
+	var NOT_ALLOWED =  '<script, <a, <input, <base, <object, <html, <div, <form, &gt;, &lt;, &gt, &lt, <frame, <iframe, <body, <meta, <head ';
+
+	var pageId="DsaLogin";
+
+	var PAGEID = 'DsaLogin';
+
+	var SITETHEME =  'theme_orange/';
+
+	</script>	
+
+	
+
+	<script type="text/javascript" src="/includes/js/jquery.1.js"></script>
+
+
+		
+
+	<script type="text/javascript" src="/includes/js/thickbox.1.js"></script>
+
+	<script type="text/javascript" src="/includes/js/formValidation.1.js"></script>
+
+	<script type="text/javascript" src="/includes/js/jquery.autocomplete.1.js"></script>
+
+	<script type="text/javascript" src="/includes/js/triggerFacebox.1.js"></script>
+
+	<script type="text/javascript" src="/includes/js/commonFunctions.1.js"></script>
+
+	<script type="text/javascript" src="/includes/js/dsa.1.js"></script>
+
+	<script type="text/javascript" src="/includes/js/facebox_k.1.js"></script>
+
+	<script type="text/javascript" src="/includes/js/thickbox.1.js"></script>
+
+	<script type="text/javascript" src="/includes/js/webcommon.1.js"></script>
+
+	<script type="text/javascript" src="/includes/js/jquery.maxlength.1.js"></script>
+
+
+	
+
+		
+
+
+</head>
+
+<body class="dsabrown" >
+
+ <div class="loadingImg" style="display:none;">
+ 	<div id="processImg" class="imgContainer imgContainerBooking" >
+ 		<img src="includes/theme_green/images/loadingAnimation.gif" alt="" title=""/><div class="loadingMsg">Loading...Please wait...</div>
+ 	</div>
+ </div>
+<div id="wrapper"  class="staticInner" >
+
+	<!-- Header starts -->
+
+	<div id="header" class="innerPage clearfix">
+
+	
+
+		<div class="logo"><img border="0" title="Club Mahindra Holidays" alt="Club Mahindra Holidays" 
+
+		src="includes/theme_green/images/logo--for-inner-pages.png"></div>
+
+	
+
+			</div>
+
+	<!-- Header ends -->	
+
+		<div style="height:30px;"></div>
+
+		
+
+	<!-- Content starts -->
+
+	<div id="content"><div class="contentWrapper clearfix fullWidth">
+
+	<!-- Right panel starts -->
+
+	<div class="resortAboutUs">
+
+		<div>
+
+			<div class="welcomeImg">
+
+				<div class="welcomeForm">
+
+					<div class="form">
+
+						<form name="DsaLoginFrm" action="DsaLogin" method="POST">
+
+						<div class="label"><h3>Login - Business Partner</h3></div>
+
+						<div class="mandetoryTxt">All Fields are mandatory</div>
+
+						<div id="errorMsg" class="validationErrMsg" style="display: none;"><ul>Invalid User ID/Password</ul></div>
+
+						<div class="clearfix">
+
+							<div class="floatLeft label marginT labelwidth150px">User ID</div>
+
+							<div id="userId" class="txtBoxMask clearfix normtxtbox floatLeft marginT"><div class="left"></div><div class="txtField"><input id="txtUserId" name="txtUserId" type="text" value="" maxlength="50"/></div><div class="right"></div></div>
+
+							<div class="floatLeft label marginT labelwidth150px">Password</div>
+
+							<div id="password" class="txtBoxMask clearfix normtxtbox floatLeft marginT"><div class="left"></div><div class="txtField"><input id="txtPassword" name="txtPassword" type="password" value="" maxlength="25"/></div><div class="right"></div></div>
+
+							<div class="floatLeft label marginT labelwidth150px"></div>
+
+							<div class="actionButton floatLeft">
+
+								<a href="javascript:void(0)" id="login" title="Login"><span class="left">&nbsp;</span><span class="middle" title="Login">Login</span><span class="right">&nbsp;</span></a>
+
+								<div class="clear"></div>
+
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="dsaForgotLinks">
+
+								<ul>
+
+								<li><a href="#forgotDSAUserID" id="forgotUId" title="Forgot User ID ?" rel="facebox" >Forgot User ID ?</a> </li>
+
+								<li><a href="#forgotDSAPassword" id="forgotPwd" title="Forgot User Password?" rel="facebox"> Forgot User Password ?</a></li>
+
+								</ul>
+
+							</div>
+
+						</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+				<img alt="Welcome" src="includes/theme_green/images/dsa_man.jpg"  width="982" height="750" />
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Right panel ends -->
+
+</div>
+
+<!-- forgot user id block starts -->
+
+<div class="popUpFormContent" id="forgotDSAUserID" style="display:none;">
+
+	<div class="popup_heading"><h2>Forgot User ID</h2></div>
+
+	<div class="actionButton"><p class="italic">Hint : User ID might be your DSA ID; else please contact Member Relations Centre  (39880000*) </p></div>    
+
+</div>
+
+<!-- forgot user id block ends -->
+
+<!-- forgot Password block starts-->
+
+<div class="popUpFormContent" id="forgotDSAPassword" style="display:none;">
+
+	<div class="popup_heading"><h2>Forgot Password</h2></div>
+
+	<form name="frmforgotPassword" >
+
+		<div class="formContent clearfix formContentFields">
+
+			<div class="marginB">Please enter the following fields </div>
+
+			<div class="heading floatLeft labels"><label for="fgpwduser"><span class="asterik">* </span>User ID </label></div>
+
+			<div class="txtBoxMask clearfix" id="forgotUser"><div class="left"></div><div class="txtField"><input id="fgDSApwduserId" name="fgDSApwduserId" type="text" maxlength="50" class="txtBox_medium"/></div><div class="right"></div></div>
+
+			<div class="heading floatLeft labels"><label for="fgpwdRegEmail"><span class="asterik">* </span>Primary Email ID </label></div>
+
+			<div class="txtBoxMask clearfix" id="forgotEmail"><div class="left"></div><div class="txtField"><input id="fgpwdDSARegEmailid" name="fgpwdDSARegEmailid" maxlength="50" type="text" class="txtBox_medium"/></div><div class="right"></div></div>
+
+		</div>
+
+		<input id="roleid" name="roleid" type="hidden" value="1011"/>
+
+		<div class="validationErrMsg" id="forgotErr" style="display:none"><ul></ul></div>
+
+		<div class="actionButton clearfix" id="ajaxfrgtpwd">
+
+			<div class="actionButtonBorder floatLeft"><a href="javascript:void(0);" class="clearfix submitFB fbBtn"  rel="facebox" title="Submit"><span class="left"></span><span class="mid">Submit</span><span class="right"></span></a></div>
+
+			<div class="greyBox_small floatLeft marginL"><a href="javascript:void(0);" class="clearfix cancelFB fbBtn" title="Cancel" ><span class="left"></span><span class="mid">Cancel</span><span class="right"></span></a></div>
+
+		</div>
+
+		<div class="actionButton clearfix" id="ajaxfrgtpwdloading" style="display:none"><img src="includes/theme_green/images/ajaxProcessing.gif" alt='Loading'/><span class='ajaxLoadingText'>Validating Please Wait !</span></div>
+
+	</form>
+
+</div>
+
+<!-- forgot Password block ends-->
+
+<div id="exitPasswordPopUp" style="display:none" class="exitPopup">
+
+    <div class="popup_heading"><h2 class="floatLeft">Forgot Password</h2></div>
+
+       <div class="exitContent">
+
+        <p>Please verify the link in your registered email to reset your password</p>
+
+         <div class="actionButtonBorder"><a href="#" class="clearfix resultFB" rel="facebox"><span class="left"></span><span class="mid">Ok</span><span class="right"></span></a></div>
+
+        </div>
+
+</div>
+
+   
+
+	<!-- Footer starts -->
+
+    </div>
+
+ 	    <div id="footer">
+
+    <div class="footerWrapper">
+
+    	<div class="footernew clearfix floatLeft" style="width: 800px;">
+
+			<ul class="footerColumn floatLeft">
+
+				<li class="floatNone">
+
+				<span class="mainFooterHeader" title="India's No.1 vacation provider">Club Mahindra</span>
+
+				<ul>
+
+					<li class="floatNone"><a class="subCategory" title="Find out"   href="/ResortAboutUS">About Us</a></li>
+
+					<li class="floatNone"><a class="subCategory" title="Club Mahindra Memberships" target="_blank" href="/RegistrationInfo">Become A Member</a></li>
+
+					<li class="floatNone"><a class="subCategory" href="/switchToHttps?target=DsaRegister" target ="_blank"  title="Business Opportunity">Business Opportunity</a></li>
+
+    				<li class="floatNone"><a class="subCategory" href="/switchToHttps?target=DsaLogin"  target ="_blank"  title="Business Partner Login">Business Partner Login</a></li>
+
+					
+
+					<li class="floatNone"><a class="subCategory" title="Investor Relations" href="/InvestorRelation">Investor Relations</a></li>
+
+					<li class="floatNone"><a class="subCategory" title="sitemap" href="/TreeSiteMap">Site Map</a></li>
+
+					<li class="floatNone"><a class="subCategory" title="Read Experiences & Feedback of Travellers about places where Club Mahindra Resorts are located" href="http://www.clubmahindrablog.com" target="_blank">Travel Experiences</a></li>
+
+					
+
+				</ul>
+
+				</li>
+
+			</ul>
+
+			
+
+			<ul class="footerColumn floatLeft">
+
+				<li class="floatNone">
+
+				<span class="mainFooterHeader" title="Locations">Region</span>
+
+				<ul>
+
+										<li class="floatNone"><a class="subCategory" title="East" href="ResortSearch?subcat=East&keyword=&redirect=1">East</a></li>
+
+					
+
+										<li class="floatNone"><a class="subCategory" title="International" href="ResortSearch?subcat=International&keyword=&redirect=1">International</a></li>
+
+					
+
+										<li class="floatNone"><a class="subCategory" title="North" href="ResortSearch?subcat=North&keyword=&redirect=1">North</a></li>
+
+					
+
+										<li class="floatNone"><a class="subCategory" title="South" href="ResortSearch?subcat=South&keyword=&redirect=1">South</a></li>
+
+					
+
+										<li class="floatNone"><a class="subCategory" title="West" href="ResortSearch?subcat=West&keyword=&redirect=1">West</a></li>
+
+					
+
+										
+
+					
+
+				</ul>
+
+				</li>
+
+			</ul>
+
+			<ul class="footerColumn floatLeft">
+
+				<li class="floatNone">
+
+				<span class="mainFooterHeader" title="Holiday Type">Holiday Type</span>
+
+				<ul>
+
+										<li class="floatNone"><a class="subCategory" title="Active" href="ResortSearch?subcat=Active&keyword=&redirect=1">Active</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Adventure" href="ResortSearch?subcat=Adventure&keyword=&redirect=1">Adventure</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Cosy/Romantic" href="ResortSearch?subcat=Cosy/Romantic&keyword=&redirect=1">Cosy/Romantic</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Heritage" href="ResortSearch?subcat=Heritage&keyword=&redirect=1">Heritage</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Relaxed" href="ResortSearch?subcat=Relaxed&keyword=&redirect=1">Relaxed</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Wildlife" href="ResortSearch?subcat=Wildlife&keyword=&redirect=1">Wildlife</a></li>
+
+									</ul>
+
+				</li>
+
+			</ul>
+
+			<ul class="footerColumn floatLeft">
+
+				<li class="floatNone">
+
+				<span class="mainFooterHeader" title="Terrain">Terrain</span>
+
+				<ul>
+
+										<li class="floatNone"><a class="subCategory" title="Beach" href="ResortSearch?subcat=Beach&keyword=&redirect=1">Beach</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Desert" href="ResortSearch?subcat=Desert&keyword=&redirect=1">Desert</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Hill station" href="ResortSearch?subcat=Hill station&keyword=&redirect=1">Hill station</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Himalayas" href="ResortSearch?subcat=Himalayas&keyword=&redirect=1">Himalayas</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Jungle" href="ResortSearch?subcat=Jungle&keyword=&redirect=1">Jungle</a></li>
+
+										<li class="floatNone"><a class="subCategory" title="Waterfront" href="ResortSearch?subcat=Waterfront&keyword=&redirect=1">Waterfront</a></li>
+
+									</ul>
+
+				</li>
+
+			</ul>
+
+			
+
+			<ul class="footerColumn floatLeft marginL">
+
+				<li class="floatNone">			
+
+				<span class="mainFooterHeader" title="">&nbsp;</span>	
+
+				<ul>
+
+					<li class="floatNone"><a class="mainFooterHeader" title="PrivacyPolicy" target="_blank" href="/PrivacyPolicy">Privacy Policy</a></li>
+
+					<li class="floatNone"><a class="mainFooterHeader" title="TermsOfUse" target="_blank" href="/TermsOfUse">Terms Of Use</a></li>
+
+					<li class="floatNone"><a class="mainFooterHeader" title="Disclaimer" target="_blank" href="/Disclaimer">Disclaimer</a></li>
+
+					<li>&nbsp;</li>		
+
+					<li>
+
+					<!-- AddThis Button BEGIN -->
+
+					 
+
+					<div class="floatLeft">
+
+						<!-- AddThis Button BEGIN -->
+
+							<a class="addthis_button" href="https://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-506047b726019dbb">
+
+								<img src="/includes/theme_green/images/sharethis.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/>
+
+							</a>
+
+												
+
+							<script type="text/javascript">
+
+								var addthis_config = {"data_track_addressbar":true};
+
+							</script>
+
+							<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-506047b726019dbb"></script>
+
+						 
+
+					<!-- AddThis Button END -->
+
+					</div>
+
+										</li>	
+
+		
+
+				</ul>
+
+				</li>
+
+			</ul>
+
+    	
+
+		</div>
+
+		
+
+		<div  class="floatRight verysignlogo">
+
+    		<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.clubmahindra.com&amp;size=S&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script>
+
+			<br /> <a href="https://www.verisign.com/verisign-trust-seal" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">ABOUT TRUST ONLINE</a>
+
+    	</div>
+
+		<div class="clearfix fullWidth copyRight" >&copy; Mahindra Holidays and Resorts India Ltd.</div>
+
+		<div class="clear"></div>
+
+			</div>
+
+	</div>
+
+	<!-- floating Profile links ends -->
+
+	<!-- for member footer -->
+
+	    <div id="comingSoonLayer" style="display: none;"><!--<img src="/includes/theme_green/images/bubble_tip.png" border="0" alt="" title="" class="up"/>--><div class="clear"></div><div class="left"></div><div class="mid">COMING SOON!</div><div class="right"></div><div class="clear"></div><!--<img src="/includes/theme_green/images/bubble_tip_menu.png" border="0" alt="" title="" class="down"/>--></div>
+
+		<div id="errResponseDialog" class="modalMessage" style="display:none;">
+
+		<div class="diagPopupBox">
+
+			<div class="popupHeading">
+
+						<h2>Club Mahindra</h2>
+
+						</div>
+
+			<div class="dialogMessage"></div>
+
+			<div class="diagBtns okBtn">
+
+			<div class="actionButtonSmall">
+
+						<a class="clearfix dialogOk" href="javascript:closeErrorDialogue();" title="Ok">
+
+						<span class="left"></span><span class="mid">Ok</span><span class="right"></span>
+
+		    </a>
+
+		    </div>
+
+		    </div>
+
+		</div>
+
+	</div>
+
+		<!-- For WishList Confirmation message -->
+
+	<div id="deleteConfirmDialog" class="modalMessage" style="display:none;">
+
+	<div class="diagPopupBox">
+
+		<div class="popupHeading"><h2></h2></div>
+
+		<div class="dialogMessage"></div>
+
+		<div class="dialogButtons">
+
+			<div class="actionButtonSmall dialogLeftbtn"><a class="clearfix dialogOk" href="/MyWishList?wishListId=&status=delete&wishListFlag=1" title="Yes"><span class="left"></span><span class="mid">Yes</span><span class="right"></span></a></div>
+
+			<div class="greyBox_small dialogRightbtn"><a class="clearfix dialogCancel" href="javascript:void(0);" title="No" onClick="tb_remove();"><span class="left"></span><span class="mid">No</span><span class="right"></span></a></div>
+
+		</div>
+
+	</div>
+
+	</div>
+
+	<!-- For booking-->
+
+		<div id="bookingBalanceConfirmDialog" class="modalMessage" style="display:none;">
+
+	<div class="diagPopupBox">
+
+		<div class="popupHeading"><h2>Club Mahindra</h2></div>
+
+		<div class="dialogMessage"></div>
+
+		<div class="dialogButtons">
+
+			<div class="actionButtonSmall dialogLeftbtn"><a class="clearfix dialogOk" href="javascript:void(0)" onclick="tb_remove();CheckAvailability('book');" title="Proceed"><span class="left"></span><span class="mid">Proceed</span><span class="right"></span></a></div>
+
+			<div class="greyBox_small dialogRightbtn"><a class="clearfix dialogCancel" href="javascript:void(0);" title="Cancel" onClick="tb_remove();"><span class="left"></span><span class="mid">Cancel</span><span class="right"></span></a></div>
+
+		</div>
+
+	</div>
+
+	</div>
+			
+
+		<script type='text/javascript'>
+		jQuery(document).ready(function(){
+			function getParameter() {
+			  var searchString = window.location.search.substring(1);			  
+			  var i, val;
+			  var params = searchString.split("&");			 
+			  for (i=0;i<params.length;i++) {
+				val = params[i].split("=");				 
+				if (val[1] == 1) {				
+				     jQuery("#errorMsg").show();
+				}
+			  }
+			  return null;
+			}
+			getParameter();			
+		});
+		
+
+		</script>
+
+		
+
+<!-- Footer ends -->
+
+</body>
+
+	
+
+	
+
+	
+
+</html>

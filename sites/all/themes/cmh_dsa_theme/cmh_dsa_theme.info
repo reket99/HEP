@@ -1,0 +1,21 @@
+name = CMH DSA Theme
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/style.css
+
+regions[header] = Header
+regions[user_info] = Welcome Message
+regions[user_nav] = User Navigation
+regions[left_navigation] = Left Navigation
+regions[member_navigation] = Member Navigation
+regions[news_holder] = News Holder
+regions[content] = Content
+regions[footer] = Footer
+regions[policy] = Footer Policy
+regions[copyright] = Footer Copyright
+regions[secure] = Footer Sign
+
+; Information added by CTS
+version = "7.x"
+project = "MHRIL"

@@ -1,0 +1,7 @@
+name = Dsa Resort Availability 
+description = DSA Resort Availability
+package = DSA Module
+core = 7.x
+
+files[] = cmh_dsa_availability.module
+files[] = cmh_dsa_availability.inc

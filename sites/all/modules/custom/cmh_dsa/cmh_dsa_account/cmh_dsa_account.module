@@ -1,0 +1,140 @@
+<?php
+/**
+ * @file         cmh_dsa.module
+ * @version      1.0.0
+ * @author       CTS
+ * @desc         This is a DAS Login file
+ * @date         10/07/2013
+ * @copyright    Copyright (c) 2013, Club Mahindra Holidays.  All rights reserved.
+ *               Property of Club Mahindra Holidays.  This file cannot be used or altered
+ *               in anyway without expressed written permission from 
+ *               Club Mahindra Holidays.
+ * @modified by  
+ * @modified on  
+ * @desc  
+ */
+/**
+ * @desc   - Implementation of hook_menu().Define menu items and page callbacks. 
+ * @access - public
+ * @param  - NULL
+ * @return - An array containing the menus/page links for the module. 
+ */
+function cmh_dsa_account_menu() {
+
+  /* My Account Form */
+  $items['MyAccount/AccountInformation'] = array(
+    'title' => 'Club Mahindra',
+    'file' => 'cmh_dsa_account.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('cmh_dsa_myaccount_form'),
+    'access callback' => TRUE,
+    'access arguments' => array('dsa authenticated'),
+  );
+	/* Ajax call functions for myaccount form submission */
+  $items['myaccount_submit'] = array(
+    'page callback' => 'myaccount_submit_fun',
+    'file' => 'cmh_dsa_account.inc',
+    'access callback' => TRUE,
+    'access arguments' => array('dsa authenticated'),
+    'type' => MENU_CALLBACK,
+  );
+	/* For DSA Change Password Page */
+  $items['MyAccount/dsaChangePwd'] = array(
+    'title' => 'Club Mahindra',
+    'file' => 'cmh_dsa_account.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('cmh_dsa_change_pwd_form'),
+    'access callback' => TRUE,
+		'access arguments' => array('dsa authenticated'),
+  );
+	 /* Ajax call functions for validating Current Password */
+  $items['validate_current_password'] = array(
+    'page callback' => 'validate_current_password',
+    'file' => 'cmh_dsa_account.inc',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * @desc   - Implements hook_theme().
+ * @access - public
+ * @param  - NULL
+ * @return - Returns an array of details of theme for each form.
+ */
+function cmh_dsa_account_theme() {
+  return array(
+    
+    /* For My account Form */
+    'cmh_dsa_myaccount' => array(
+      'render element' => 'form',
+      'template' => 'templates/cmh_dsa_myaccount',
+    ),
+		/*For DSA Chanage Password form*/
+		'cmh_dsa_change_pwd' => array(
+			'render element' => 'form',
+			'template' => 'templates/cmh_dsa_change_password',
+		),  
+  );
+}
+/**
+ * @desc   - Assign the elements of the DSA My Account form to variables so the themer can use those values to control how the
+ *       form elements are displayed, or alternatively displaying the whole form as constructed above.
+ * @access - public
+ * @param  - $variables : Elements of the form
+ * @return - NULL
+ */
+function template_preprocess_cmh_dsa_myaccount(&$variables) {
+	
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa_account') . '/js/cmh_dsa_myaccount.js');
+  drupal_add_library('jquery_plugin', 'thickbox');
+  drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/thickbox.css');
+  
+  $variables['cmh_dsa_myaccount'] = array();
+  $hidden = array();
+  foreach (element_children($variables['form']) as $key) {
+    $type = $variables['form'][$key]['#type'];
+    if ($type == 'hidden' || $type == 'token') {
+      $hidden[] = drupal_render($variables['form'][$key]);
+    }
+    else {
+      $variables['cmh_dsa_myaccount'][$key] = drupal_render($variables['form'][$key]);
+    }
+  }
+  // Hidden form elements have no value to themers. No need for separation.
+  $variables['cmh_dsa_myaccount']['hidden'] = implode($hidden);
+  // Collect all form elements to make it easier to print the whole form.
+  $variables['cmh_dsa_myaccount_form'] = implode($variables['cmh_dsa_myaccount']);
+}
+
+/**
+ * @desc   - Assign the elements of the DSA Change Password form to variables so the themer can use those values to control how the
+ *					 form elements are displayed, or alternatively displaying the whole form as constructed above.
+ * @access - public
+ * @param  - $variables : Elements of the form
+ * @return - NULL
+ */
+
+function template_preprocess_cmh_dsa_change_pwd(&$variables) {
+
+	drupal_add_js(drupal_get_path('module', 'cmh_dsa_account') . '/js/cmh_dsa_change_pass.js');
+	drupal_add_library('jquery_plugin', 'thickbox');
+  drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/thickbox.css');
+
+	$variables['cmh_dsa_change_pwd'] = array();
+  $hidden = array();
+  foreach (element_children($variables['form']) as $key) {
+    $type = $variables['form'][$key]['#type'];
+    if ($type == 'hidden' || $type == 'token') {
+      $hidden[] = drupal_render($variables['form'][$key]);
+    }
+    else {
+      $variables['cmh_dsa_change_pwd'][$key] = drupal_render($variables['form'][$key]);
+    }
+  }
+  // Hidden form elements have no value to themers. No need for separation.
+  $variables['cmh_dsa_change_pwd']['hidden'] = implode($hidden);
+  // Collect all form elements to make it easier to print the whole form.
+  $variables['cmh_dsa_change_pwd_form'] = implode($variables['cmh_dsa_change_pwd']);		
+}

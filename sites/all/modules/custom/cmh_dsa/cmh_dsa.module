@@ -1,0 +1,522 @@
+<?php
+/**
+ * @file         cmh_dsa.module
+ * @version      1.0.0
+ * @author       CTS
+ * @desc         This is a DAS Login file
+ * @date         10/07/2013
+ * @copyright    Copyright (c) 2013, Club Mahindra Holidays.  All rights reserved.
+ *               Property of Club Mahindra Holidays.  This file cannot be used or altered
+ *               in anyway without expressed written permission from 
+ *               Club Mahindra Holidays.
+ * @modified by  
+ * @modified on  
+ * @desc  
+ */
+
+/**
+ * @desc   - Implementation of hook_init(). 
+ * @access - public
+ * @param  - NULL
+ * @return - NULL 
+ */
+function cmh_dsa_init() {
+		
+  //drupal_add_library('jquery_plugin', 'selectbox');
+  drupal_add_library('jquery_plugin', 'facebox');
+  drupal_add_library('jquery_plugin', 'blockUI');
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa') . '/js/cmh_dsa_form_validation.js');
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa') . '/js/cmh_dsa_common_functions.js');
+
+  require_once drupal_get_path('module', 'cmh_dsa') . '/cmh_dsa_constants.php';
+  require_once drupal_get_path('module', 'cmh_dsa') . '/cmh_dsa_functions.php';
+  global $user;
+  //Run Session logout check 
+  session_timeout(); 
+  /* Authentication check for redirecting to pages*/
+  if ( !in_array( pageId, $unauth_pageid_array ) && ( is_user_session_active() == FALSE ) && ( $user->uid == 0 ) ) {
+    drupal_goto('dsalogin');
+  }
+}
+/**
+ * @desc   - Implementation of hook_menu().Define menu items and page callbacks. 
+ * @access - public
+ * @param  - NULL
+ * @return - An array containing the menus/page links for the module. 
+ */
+function cmh_dsa_menu() {
+
+ $items['checkUserSession/%'] = array(
+    'file' => 'cmh_dsa_functions.php',
+    'page callback' => 'is_user_session_active',
+    'page arguments' => array(1),
+    'access arguments' => array('access content'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  /* For DSA Login Page */
+  $items['dsalogin'] = array(
+    'title' => 'Club Mahindra',
+    'file' => 'cmh_dsa.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('cmh_dsa_login_form'),
+    'access callback' => TRUE,
+    'access arguments' => array('dsa anonymous'),
+  );
+  /* Ajax call functions for Forgot Password */
+  $items['forgot_password/%/%/%/%/%/%/%/%'] = array(
+    'file' => 'cmh_dsa.inc',
+    'page callback' => 'forgot_password',
+    'page arguments' => array(1, 2, 3, 4, 5, 6, 7, 8),
+    'access arguments' => array('access content'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  /* For DSA Reset Password Page */
+  $items['dsaResetPassword'] = array(
+    'title' => 'Club Mahindra',
+    'file' => 'cmh_dsa.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('cmh_dsa_reset_password_form'),
+    'access callback' => TRUE,
+    'access arguments' => array('dsa anonymous'),
+  );
+  /* For DSA Reset Password Captcha */
+  $items['captcha'] = array(
+    'title' => 'Club Mahindra',
+    'file' => 'cmh_dsa.inc',
+    'page callback' => 'captcha_image',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  /*Logout function */
+  $items['Logout'] = array(
+    'title' => 'Club Mahindra',
+    'page callback' => 'dsa_logout',
+    'access callback' => TRUE,
+  );
+  /* Resort Details Form */
+  $items['ResortDetails'] = array(
+    'title' => 'Club Mahindra',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('cmh_dsa_resort_detail_form'),
+    'access callback' => TRUE,
+    'access arguments' => array('dsa authenticated'),
+  );
+  /* Ajax call functions for getting resort details */
+  $items['resort_details'] = array(
+    'page callback' => 'get_resort_details',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  /* Autocomplete call functions for members */
+  $items['member_autocomplete_callback'] = array(
+    'file' => 'cmh_dsa_functions.php',
+    'page callback' => 'member_autocomplete_callback',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  ); 
+
+  /* Feedback Form */
+  $items['feedback'] = array(
+    'title' => 'Club Mahindra',
+    'file' => 'cmh_dsa.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('feedback_form'),
+    'access callback' => TRUE,
+    'access arguments' => array('dsa authenticated'),
+  );
+  return $items;
+}
+
+/**
+ * @desc   - Implements hook_theme().
+ * @access - public
+ * @param  - NULL
+ * @return - Returns an array of details of theme for each form.
+ */
+function cmh_dsa_theme() {
+  return array(
+    /*For DSA Login form*/
+    'cmh_dsa_login' => array(
+      'render element' => 'form',
+      'template' => 'cmh_dsa_login',
+    ),
+    /*For DSA Reset Password form*/
+      'cmh_dsa_reset_pass' => array(
+      'render element' => 'form',
+      'template' => 'cmh_dsa_reset_pwd',
+    ),
+    /* For Resort Details Form */
+    'resort_details' => array(
+      'render element' => 'form',
+      'template' => 'cmh_dsa_resort_details',
+    ),
+    /*For DSA News & Updates form*/
+    'cmh_dsa_feedback' => array(
+      'render element' => 'form',
+      'template' => 'cmh_dsa_feedback',
+    ),    
+    /*For DSA welcome form*/
+    'cmh_dsa_welcome' => array(
+      'render element' => 'form',
+      'template' => 'Welcome',
+    ), 
+	);
+}
+
+/**
+ * @desc   - Function for Logout
+ * @access - public
+ * @param  - NULL
+ * @return - NULL
+ */
+function dsa_logout() {
+  if (isset($_GET['q']) && $_GET['q'] == 'Logout') {
+    //Do not remove below commented code
+    //drupal_flush_all_caches();
+    unset_session();
+    drupal_goto('dsalogin');
+  }
+}
+
+/**
+ * @desc   - Implementation of hook_permission().
+ * @access - public
+ * @param  - NULL
+ * @return - Null
+ */
+function cmh_dsa_permission() {
+  return array(
+    'dsa authenticated' => array(
+      'title' => t('Dsa Authenticated'),
+    ),
+    'dsa anonymous' => array(
+      'title' => t('Dsa Anonymous'),
+    ),
+  );
+}
+
+/**
+ * @desc   - This is a form for Display DSA Resort Detail Form
+ * @access - public
+ * @param  - $form: 
+ * @param  - &$form_submit : 
+ * @return - $form: array
+ */
+function cmh_dsa_resort_detail_form($form, &$form_submit) {
+  
+  $all_resort_list = get_all_resort('dsa_resort_details');
+  $form['drpResort'] = array(
+    '#type' => 'select',
+    '#options' => $all_resort_list,
+    '#id' => 'drpResort',
+    '#attributes' => array('onchange' => "get_resort_details(this.value)"),
+  );
+  $form['#theme'] = 'resort_details';
+  return $form;
+}
+
+
+/**
+ * @desc   - Function for getting all resort details
+ * @access - public
+ * @param  - $node_title : Resort title
+ * @return - resort detail array
+ */
+function get_all_resort($node_title) {   
+  $result = db_query("select n.nid, n.title, n.type from {node} n where n.status = '1' and n.type = :type", array(":type" => $node_title));
+  $resort_data = array('0' => '-Select a Resort-');
+  while ($record = $result->fetchAssoc()) {
+    $resort_data[$record['nid']] = t($record['title']);
+  }
+  return $resort_data;
+}
+
+/**
+ * @desc   - Function for displaying resort details with ajax call
+ * @access - public
+ * @param  - Null
+ * @return - resort detail html result to show all details.
+ */
+function get_resort_details() {
+  if (!empty($_REQUEST['resortid']) && $_REQUEST['resortid'] > 0) {
+  
+    $resort_id = $_REQUEST['resortid'];
+    
+    $sql = db_select('node', 'n');
+    $sql->join('field_data_field_resort_image', 'fdfi', 'n.nid = fdfi.entity_id');
+    $sql->leftJoin('field_data_field_resort_fact_sheet', 'frfrf', 'n.nid = frfrf.entity_id');
+    $sql->join('field_data_field_view_more_details', 'fvmd', 'n.nid = fvmd.entity_id');
+    $sql->fields('n', array('title')) 
+        ->fields('fdfi', array('field_resort_image_fid'))
+        ->fields('frfrf', array('field_resort_fact_sheet_fid'))
+        ->fields('fvmd', array('field_view_more_details_value'));
+    $sql->condition('n.nid', $resort_id, '=');
+    $result = $sql->execute();
+    
+    $resort_detail = array();
+    $image_data = '';
+    while ($record = $result->fetchAssoc()) { 
+      $resort_detail['more_detail_val'] = t($record['field_view_more_details_value']);
+      
+      $pdf_id = strip_tags($record['field_resort_fact_sheet_fid']);
+      $pdfpath = file_load($pdf_id)->uri;
+      $pdf_url = file_create_url($pdfpath);
+      
+      $image_id = strip_tags($record['field_resort_image_fid']);
+      $imgpath = file_load($image_id)->uri;
+      $img_url = file_create_url($imgpath);
+      $image_data .= '<img src="' . $img_url . '" border="0" alt="Resort Images" title="" class="slides-img" />';
+    }
+    $pdf_icon = base_path() . drupal_get_path("theme", "cmh_dsa_theme") . '/images/Pdf.png';
+    $view_more_link = $resort_detail['more_detail_val'];
+    
+    $resort_data_detail = '<div id="resortcarousel">
+                    <div id="slider">
+                      <div id="slides" class="clearfix">
+                        <div class="slides_container">
+                          ' . $image_data . '
+                        </div>
+                      </div>
+                    </div>
+                  </div>';
+								
+		$resort_data_detail .= '<div class="fact-sheet">';
+		if($pdf_id != ''){
+			$resort_data_detail .= '<span class="float-left"><img border="" alt="PDF" width="36px" height="32px" src=' . $pdf_icon . '></span>
+															<span id="dwnfact-sheet"><a target ="_blank" href="' . $pdf_url . '">Download Fact Sheet</a></span>
+															<span class="fact_separator"> | </span>';
+		}
+		$resort_data_detail .= '<span id="view-detail"><a target ="_blank" href="' . $view_more_link . '">View Details</a></span>
+													</div>';
+		echo $resort_data_detail;
+  }
+}
+
+/**
+ * @desc   - Implements hook_block_info()
+ * @access - public
+ * @param  - Null
+ * @return - $blocks: array of blocks
+ */
+function cmh_dsa_block_info() {
+  $blocks['welcome_block'] = array(
+    'info' => t('Welcome Message'),
+    'status' => TRUE,
+    'region' => 'content',
+    'weight' => 0,
+    'visibility' => 1,
+  );
+  $blocks['contract_info'] = array(
+    'info' => t('Contract'),
+    'status' => FALSE,
+    'weight' => 0,
+  );
+  return $blocks;
+}
+
+/**
+ * @desc   - Implements hook_block_view().
+ * @access - public
+ * @param  - $delta
+ * @return - $block
+ */
+function cmh_dsa_block_view($delta = '') {
+  switch ($delta) {
+    /* News & Updates block */
+    case 'news_updates_block':
+      break;
+    
+    /* Welcome block */
+    case 'welcome_block':
+      $block['content'] = cmh_dsa_block_contents($delta);
+      return $block;
+      break;
+      
+    /* member info */
+    case 'contract_info':
+      $block['content'] = cmh_dsa_block_contents($delta);
+      return $block;
+      break;
+  }
+}
+
+/**
+ * @desc   - A module-defined block content function.
+ * @access - public
+ * @param  - $delta
+ * @return - $string
+ */
+function cmh_dsa_block_contents($delta) {
+  switch ($delta) {  
+    case 'news_updates_block':
+      break;
+      
+    case 'welcome_block':
+      $dsa_name = t(get_session('dsa_user_data', 'dsa_name'));
+      //$string = '<div class="floatLeft"><h2>Welcome ' . $dsa_name . ' </h2></div>';
+      $string = '<span class="welcome">Welcome</span> 
+                  <span class="welcome-user">' . $dsa_name . '</span>';
+      return $string;
+      break;
+      
+    case 'contract_info':
+      $string = '<div id="contract_info"></div>';
+      return $string;
+      break;
+  }
+}
+/**
+ * @desc   - Assign the elements of the DSA Login form to variables so the themer can use those values to control how the
+ *         form elements are displayed, or alternatively displaying the whole form as constructed above.
+ * @access - public
+ * @param  - $variables : Elements of the form
+ * @return - NULL
+ */
+function template_preprocess_cmh_dsa_login(&$variables) {
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa') . '/js/cmh_dsa.js');
+  $variables['dsalogin'] = array();
+  $hidden = array();
+  
+  foreach (element_children($variables['form']) as $key) {
+    $type = $variables['form'][$key]['#type'];
+    if ($type == 'hidden' || $type == 'token') {
+      $hidden[] = drupal_render($variables['form'][$key]);
+    }
+    else {
+      $variables['dsalogin'][$key] = drupal_render($variables['form'][$key]);
+    }
+  }
+  // Hidden form elements have no value to themers. No need for separation.
+  $variables['dsalogin']['hidden'] = implode($hidden);
+  
+  // Collect all form elements to make it easier to print the whole form.
+  $variables['dsalogin_form'] = implode($variables['dsalogin']);
+}
+
+/**
+ * @desc   - Assign the elements of the DSA Reset New Password form to variables so the themer can use those values 
+       to control how the form elements are displayed, or alternatively displaying the whole form as constructed above.
+ * @access - public
+ * @param  - $variables : Elements of the form
+ * @return - NULL
+ */
+function template_preprocess_cmh_dsa_reset_pass(&$variables) { 
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa') . '/js/cmh_dsa_reset_pass.js');
+  drupal_add_library('jquery_plugin', 'thickbox');
+  $variables['dsa_reset_password'] = array();
+  $hidden = array();
+  
+  foreach (element_children($variables['form']) as $key) {
+    $type = $variables['form'][$key]['#type'];
+    if ($type == 'hidden' || $type == 'token') {
+      $hidden[] = drupal_render($variables['form'][$key]);
+    }
+    else {
+      $variables['dsa_reset_password'][$key] = drupal_render($variables['form'][$key]);
+    }
+  }
+  // Hidden form elements have no value to themers. No need for separation.
+  $variables['dsa_reset_password']['hidden'] = implode($hidden);
+
+  // Collect all form elements to make it easier to print the whole form.
+  $variables['dsa_reset_password_form'] = implode($variables['dsa_reset_password']);
+}
+
+/**
+ * @desc   - Assign the elements of the DSA Resort details form to variables so the themer can use those values to control how the
+ *       form elements are displayed, or alternatively displaying the whole form as constructed above.
+ * @access - public
+ * @param  - $variables : Elements of the form
+ * @return - NULL
+ */
+function template_preprocess_resort_details(&$variables) {
+
+  drupal_add_js(drupal_get_path('module', 'jquery_plugin') . '/slides.min.jquery.js');
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa') . '/js/cmh_dsa_gallery.js');
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa') . '/js/cmh_dsa_resort_details.js');
+  drupal_add_js(drupal_get_path('module', 'jquery_plugin') . '/jquery.maxlength.js');
+  drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/jquery.selectBox.css');
+  
+  $variables['resort_details'] = array();
+  $hidden = array();
+  foreach (element_children($variables['form']) as $key) {
+    $type = $variables['form'][$key]['#type'];
+    if ($type == 'hidden' || $type == 'token') {
+      $hidden[] = drupal_render($variables['form'][$key]);
+    }
+    else {
+      $variables['resort_details'][$key] = drupal_render($variables['form'][$key]);
+    }
+  }
+  // Hidden form elements have no value to themers. No need for separation.
+  $variables['resort_details']['hidden'] = implode($hidden);
+  // Collect all form elements to make it easier to print the whole form.
+  $variables['resort_details_form'] = implode($variables['resort_details']);
+}
+
+/**
+ * @desc   - Assign the elements of the Welcome form to variables so the themer can use those values 
+ *       to control how the form elements are displayed, or alternatively displaying the whole form as
+ *           constructed above.
+ * @access - public
+ * @param  - $variables : Elements of the form
+ * @return - NULL
+ */
+function template_preprocess_cmh_dsa_welcome(&$variables) { 
+  
+  $variables['welcome_block'] = array();
+  $hidden = array();
+  
+  foreach (element_children($variables['form']) as $key) {
+    $type = $variables['form'][$key]['#type'];
+    if ($type == 'hidden' || $type == 'token') {
+      $hidden[] = drupal_render($variables['form'][$key]);
+    }
+    else {
+      $variables['welcome_block'][$key] = drupal_render($variables['form'][$key]);
+    }
+  }
+  // Hidden form elements have no value to themers. No need for separation.
+  $variables['welcome_block']['hidden'] = implode($hidden);
+
+  // Collect all form elements to make it easier to print the whole form.
+  $variables['welcome_block_form'] = implode($variables['welcome_block']);
+}
+
+/**
+ * @desc   - Assign the elements of the Feedback form to variables so the themer can use those values 
+ *       to control how the form elements are displayed, or alternatively displaying the whole form as
+ *           constructed above.
+ * @access - public
+ * @param  - $variables : Elements of the form
+ * @return - NULL
+ */
+function template_preprocess_cmh_dsa_feedback(&$variables) { 
+  drupal_add_library('jquery_plugin', 'thickbox');
+  //drupal_add_library('jquery_plugin', 'selectbox');
+  drupal_add_library('jquery_plugin', 'maxlength');
+  //drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/jquery.selectBox.css');
+  drupal_add_css(drupal_get_path('module', 'cmh_dsa') . '/css/thickbox.css');
+  drupal_add_js(drupal_get_path('module', 'cmh_dsa') . '/js/cmh_dsa_feedback.js');
+  
+  $variables['news_updates_block'] = array();
+  $hidden = array();
+  
+  foreach (element_children($variables['form']) as $key) {
+    $type = $variables['form'][$key]['#type'];
+    if ($type == 'hidden' || $type == 'token') {
+      $hidden[] = drupal_render($variables['form'][$key]);
+    }
+    else {
+      $variables['news_updates_block'][$key] = drupal_render($variables['form'][$key]);
+    }
+  }
+  // Hidden form elements have no value to themers. No need for separation.
+  $variables['news_updates_block']['hidden'] = implode($hidden);
+
+  // Collect all form elements to make it easier to print the whole form.
+  $variables['news_updates_block_form'] = implode($variables['news_updates_block']);
+}

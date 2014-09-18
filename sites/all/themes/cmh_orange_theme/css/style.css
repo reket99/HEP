@@ -1,0 +1,2142 @@
+@font-face
+{
+    font-family: Museo 300;
+    /* src: url('Museo300-Regular.otf') */
+}
+@font-face
+{
+    font-family: Museo 500;
+    /* src: url('Museo500-Regular.otf') */
+}
+@font-face
+{
+    font-family: Museo 700;
+    /* src: url('Museo700-Regular.otf') */
+}
+body {
+	color: #070B07;
+	font-family: "Museo 300","san-serif",Arial,Myriad pro;
+	font-size: 12px;
+	line-height: 18px;
+	margin:0px;
+	padding:0px;
+}
+#wrapper {
+	margin: 0 auto;
+	text-align: left;
+	width: 986px;
+}
+/******Start:Header******/
+#header {
+	width: 960px;
+	background-color: #ffffff;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+	height: 85px;
+}
+#header div.logo {
+	float: left;
+	height: 81px;
+	margin-left: -15px;
+	margin-top: 0;
+	position: relative;
+	width: 172px;
+    z-index: 1;
+}
+.logo a img{
+	border:none;
+}
+.welcomeDsa{
+	float: left;
+  padding-left: 15%;
+  padding-top: 20px;
+}
+#header .topBgNoBorder {
+	padding-top:30px;
+}
+#header .topBgNoBorder ul#logout li {
+	float:left;
+	padding-left:5px;
+}
+#header .topBgNoBorder .readMore {
+  font-size: 11px;
+}
+#header  .topBgNoBorder ul#logout li.first{
+	padding-right:5px;
+}
+#header  .topBgNoBorder ul#logout li.last{
+	background:url("../images/separator.jpg") no-repeat left ;
+}
+/******End:Header******/
+
+/******Start:DSA content******/
+.dnd_center{
+	margin-left:32%;
+}
+.dnd_center a{
+	color:#279FCD;
+	text-decoration: underline;
+}
+.dnd_center a:hover{
+	color:#FF8A00;
+}
+.contentWrapper {
+  padding-top: 45px;
+}
+.searchMember .topBgNoBorder {
+	background: url("../images/top_bg_no_border.png") no-repeat scroll 0 0 #FFFFFF;
+	width: 986px;
+	height: 35px;
+	display: block;
+	overflow: hidden;
+}
+.searchMember .topBgNoBorder ul#logout li {
+	float:left;
+	padding-left:5px;
+}
+.searchMember .topBgNoBorder .readMore {
+  font-size: 11px;
+}
+.readMore {
+	color: #0D9DDB !important;
+	font-size: 14px;
+	font-weight: bold;	
+}
+a.readMore:hover {
+  color: #FFC845 !important; 
+}
+.searchMember .topBgNoBorder ul#logout li.first{
+	padding-right:5px;
+}
+.searchMember .topBgNoBorder ul#logout li.last{
+	background:url("../images/separator.jpg") no-repeat left ;
+}
+.searchMember .topBgNoBorder h2 {
+	margin-bottom: 15px;
+	color: #464646;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 24px;
+}
+.searchMember .tabs {
+	padding-top: 30px;
+	width: 100%;
+}
+.searchMember .searchDSATabs{padding-top : 0px !important;}
+.dsaMemberTabs{
+	width:87.9% !important;
+}
+.dsaMemberTabs .resortNav{
+	border-right:0px !important;
+} 
+.loginPgImg {
+	width: 64%;
+	margin-bottom: 20px;
+	overflow: hidden;
+	display: block;
+    float: left;
+}
+.welcomeImg{
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.welcomeForm{
+    float: left;
+    right: 4px;
+    top: 5px;
+    width: 34%;
+    margin: 0 0 0 10px;
+    border: 1px solid #D3D3D3;
+    /* border-radius: 5px 5px 5px 5px; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px; 
+    border-radius: 5px; 
+}
+.welcomeForm .form{ 
+	padding: 0px 35px;
+}
+.welcomeForm .label{
+	color: #3a3938; 
+	padding-bottom:5px; 
+	font-size:14px; 
+	font-weight:600;
+}
+.welcomeForm .labelwidth150px{
+	display:block; 
+	width:100px;
+}
+.txtBoxMask input, .txtBox_medium{
+	font-size:14px; 
+	height: 22px;
+	width: 151px;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.txtBoxMask .txtField {
+	float: left;
+	position: relative;
+}
+.dsaForgotLinks {
+  margin-left: 100px;
+}
+.dsaForgotLinks ul {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+}
+.dsaForgotLinks ul li {
+	background: url("../images/dsa_loginArrow.png") no-repeat scroll 0 7px transparent;
+	display: block;
+	float: none;
+	padding: 0 0 0 12px;
+}
+.dsaForgotLinks ul li a {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.dsaForgotLinks ul li  a:hover{ 
+	color:#ff8a00;
+}
+.welcomeForm .actionButton {
+	font-family: "Museo 300", "san-serif", Arial, Myriad pro; 
+	margin-top: 10px;
+}
+.welcomeForm .actionButton a, .welcomeForm .actionButtonSmall a{
+	color:#FFFFFF;
+}
+.welcomeForm .actionButton a span {
+	display: block; 
+	float: left; 
+	height:37px; 
+	cursor: pointer;
+}
+.welcomeForm .actionButton a span.middle {
+	font-size:14px; 
+	padding-right:10px; 
+	padding-left:10px; 
+	height: 19px;
+}
+.welcomeForm .actionButton .middle{
+	background: url('../images/brown_btn_mid.png') no-repeat left center;
+	background-repeat:repeat-x;
+	background-position:50% center;
+	padding: 9px 5px;
+}
+.welcomeForm .actionButton .left{
+	background: url('../images/brown_btn_left.png') no-repeat left center;
+}
+.welcomeForm .actionButton .right{
+	background: url('../images/brown_btn_right.png') no-repeat left center;
+}
+.welcomeForm .actionButton .left, .welcomeForm .actionButton .right{
+	width:6px;
+}
+.welcomeForm .marginT{
+	margin-top:5px;
+}
+.welcomeImg .welcomeForm img{
+	margin-bottom:20px;
+}
+.welcomeForm .form .validationErrMsg ul{ 
+	margin-bottom:0;
+	padding:3px 10px;
+}
+.welcomeForm .form  .mandetoryTxt{
+	color: #0D9DDB;
+	font-style: italic;
+	padding-bottom: 10px;
+}
+.financeList ul{
+	margin:0px !important;
+	padding:0px;
+}
+
+/******Start:DSA Registration form******/
+.dsaWelcomePage{
+	position: relative;
+}
+.dsaWelcomePage .dsaClubMahindraLogo{
+	z-index: 999; 
+	top: -14px;
+}
+.dsaWelcomePage .dsaTopHeaderContent{
+	background-color: #FFF;
+	margin-top: 25px;
+	width: 100%;
+}
+.dsaWelcomePage .dsaTopHeaderContent h1.dsaTopHeader{
+	color: #000000 !important;
+}
+.dsaWelcomePage .dsaTopHeaderContent p{
+	color:#000000 !important;
+	font-size: 13px;
+	padding-bottom: 5px !important; 
+	margin:0px !important;
+}
+.dsaWelcomePage .dsaTopHeaderContent .dsaPointsList ul{
+	list-style-type: disc !important;
+	margin-left: 13px; 
+	padding:0px;
+}
+.welcomeForm .form .dsaRegisterForm{
+	background-color: transparent !important;
+}
+.welcomeForm .form .dsaRegisterDetailsForm{
+	margin-left: 10px;
+} 
+.feedback .section .pdField {
+	padding-bottom: 5px;
+}
+/******Start:transbox******/
+.transbox{
+  left: 1;
+  position:absolute; 
+  width:427px; 
+  margin-top: 5px;
+}
+.transbox .dsaLeftPanelContent ul{
+	padding-left:0px;
+}
+.transbox .dsaLeftPanelContent ul li{
+	background-color: #06B5DD;
+	color: #FFFFFF;
+	height: 30px;
+	margin-top: 9px;
+	padding-left: 10px;
+	padding-top: 7px;
+	width: 94%;
+}
+.transbox .dsaLeftPanelImgContnr {
+	margin-top: 9px;
+	width: 96%;
+}
+/******End:transbox******/
+.dsaWelcomePage .welcomeImg .welcomeForm {
+	background: url("../images/dsaRegister_top.jpg") no-repeat scroll center top transparent;
+	border-left: 1px solid #CCCCCC;
+	float: right;
+	margin-right: 40px;
+	margin-top: 5px;
+	padding-left: 13px;
+	padding-top: 37px;
+	top: 6px;
+	width: 495px;
+	position:relative;
+}
+.welcomeForm .label .dsaRightPanelHeaderDivBG {
+	background-color: #06B5DD;
+	float: left;
+	height: 35px;
+	margin-right: 8px;
+	width: 19px;
+}
+.welcomeForm .label .dsaRightPanelHeaderDivContent {
+	font-size:12px;
+	color: #000000 !important;
+	width: 320px;
+	margin:0px;
+}
+.dsaWelcomePage .welcomeImg .welcomeForm .form {
+	background: url("../images/transparency.png") repeat scroll 0 0 transparent;
+	margin-top: 15px;
+	opacity: 0.8;
+	padding: 0 0 0 10px;
+}
+.dsaWelcomePage .welcomeImg .welcomeForm .label h4 {
+	color: #B33E37;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	margin-bottom: 5px;
+	padding-bottom: 0 !important;
+	padding-top: 7px;
+}
+.dob .selectBox-label {
+  width: 45px !important;
+}
+.dob  .selectBox-dropdown {
+  width: 75px !important;
+}
+.selectBox-left { width: 3px}
+#wrapper .smalltxtbox input {
+  width: 74px !important;
+}
+.feedback .section .pdfieldName {
+	margin-right: 2px; 
+	width: 170px;
+	float: left;
+	padding-left: 7px;
+	position:relative;
+}
+.asterik {
+	color: #CC423F;
+	left: 0;
+	position: absolute;
+}
+.bigdsavimg .feedback .section { 
+	padding: 5px 0;
+	background:none !important
+}
+.bigdsavimg .feedback .section .pdfieldName label {
+	display: inline-block;
+	padding-top: 2px;
+	font-weight:bold;color:#17120e;font-size:11px;
+}
+.radioBtnOpt {
+	float: left;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+.feedback .info .pdFieldInput label a, .feedback label {
+  color: #615F5F;
+}
+.radioBtnVal {
+	float: left;
+	padding-right: 18px;
+}
+.domesticIntrRadioBtn {
+	/*float: left; */
+	margin-right: 5px;
+	margin-top: 3px;
+}
+.domesticIntrRadioLabel{
+	color: #17120E;
+	font-size:12px;
+}
+.section .enqRadio{
+	padding-bottom: 10px;
+	padding-right: 25px;
+	height:33px;
+}
+.txtAreaMask textarea {
+	width:44%;
+}
+.txtAreaMask .left {
+   background: url("../images/txtArea_left.png") no-repeat scroll left top transparent;
+}
+.txtAreaMask .right {
+  background: url("../images/txtArea_right.png") no-repeat scroll left top transparent;
+}
+.txtAreaMask .left, .txtAreaMask .right {
+	float: left;
+	height: 75px;
+	width: 5px;
+}
+.colorLight {
+	color: #666666 !important;
+	font-size: 11px !important;
+	font-style: italic;
+}
+.smalltxtbox input {
+  width: 74px !important;
+}
+.dash {
+	float: left;
+	margin-top: 4px;
+	text-align: center;
+	width: 15px;
+}
+.actionButtonBorder a span.left {
+	background: url("../images/orangebtngrad_left.png") no-repeat scroll left top transparent !important;
+	width:4px !important;
+	height: 27px;
+}
+.actionButtonBorder a span.mid {
+	background: url("../images/orangebtngrad_mid.png") repeat-x scroll 0 0 transparent !important;
+	font-size: 14px;
+	font-weight: normal;
+	height: 23px;
+	padding: 5px 9px;
+	color:#fff;
+}
+.actionButtonBorder a span.right {
+	background: url("../images/orangebtngrad_right.png") no-repeat scroll right top transparent !important;
+	width:5px !important;
+	height: 27px;
+}
+.actionButtonBorder a span {
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 37px;
+}
+.greyBox_small {
+	color: #454545;
+	display: block;
+	font-size: 12px;
+}
+a.cancelFB:focus span.mid {
+  color: #FF8A00 !important;
+}
+.greyBox_small span.left {
+	background: url("../images/grayBoxSmall_left.png") no-repeat scroll left top transparent !important;
+	height: 25px !important;
+	width: 3px !important;
+}
+.greyBox_small span.mid {
+	background: url("../images/grayBoxSmall_mid.png") repeat-x scroll 0 0 transparent;
+	border-bottom: 1px solid #A1A1A1;
+	border-top: 1px solid #A1A1A1;
+	color: #000000;
+	height: 21px !important;
+	padding: 2px 10px 0px 10px;
+	font-size: 14px;
+}
+.greyBox_small span.right {
+	background: url("../images/grayBoxSmall_right.png") no-repeat scroll left top transparent !important;
+	height: 25px !important;
+	width: 3px !important;
+}
+.greyBox_small a span {
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 37px;
+}
+.regActionButton{
+	margin-top:0px !important;
+}
+.select_width{ width:55px !important; }
+/******End:DSA Registration form******/
+/******Start:DSA Thank You******/
+.dsaThankYou {
+  background: url("../images/refer_friend_bg.png") no-repeat scroll center top #FFFFFF;
+}
+.dsaThankYou #header{
+	background:transparent;
+	margin-top:0px;
+}
+.dsaThankYou .headLine {
+	background-color: #FBC443;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding: 5px 10px;
+}
+.dsaThankYou .referFriendContent {
+	color: #515151;
+	padding: 20px;
+}
+.dsaThankYou .referDetailsTY {
+	margin: 0 auto;
+	padding: 70px 0;
+	width: 320px;
+}
+.dsaThankYou .shareText {
+  font-size: 16px;
+}
+.dsaThankYou .referDetailsTY div {
+  text-align: center;
+}
+.dsaThankYou .referDetailsTY .frmGrayButton {
+	margin: 20px auto 0;
+	width: 65px;
+}
+.frmGrayButton {
+  display: block;
+}
+.frmGrayButton a {
+  color: #000000;
+}
+.frmGrayButton span {
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-family: "Museo 300","san-serif",Arial,Myriad pro;
+	font-size: 15px;
+	height: 36px;
+}
+.frmGrayButton span.left {
+	background: url("../images/frmGraybtn_left.jpg") no-repeat scroll left top transparent;
+	width: 5px;
+}
+.frmGrayButton span.middle {
+	background: url("../images/frmGraybtn_mid.jpg") repeat-x scroll 0 0 transparent;
+	border-bottom: 1px solid #A1A1A1;
+	border-top: 1px solid #A1A1A1;
+	height: 16px;
+	padding: 9px 5px;
+}
+.frmGrayButton span.right {
+	background: url("../images/frmGraybtn_right.jpg") no-repeat scroll left top transparent;
+	width: 5px;
+}
+/******End:DSA Thank You******/
+/******Start:DSA Search member******/
+#divFilter{
+	padding-top: 5px;
+}
+.searchMember .tbl {
+	border-collapse: collapse;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	text-align: left;
+	width: 100%;
+}
+.searchMember .tbl .borderBot th {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #CCCCCC;
+	color: #2B2B2B;
+}
+.searchMember .tbl .rtAlign {
+  text-align: right;
+}
+.searchMember .tbl th {
+	background: none repeat scroll 0 0 #FFC845;
+	border-bottom: 0px solid #CCCCCC !important;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	text-align: left;
+}
+.searchMember .tbl .pagination{
+	margin:0px;
+}
+.searchMember .tbl .pagination li {
+	display: inline;
+	padding: 0 2px;
+}
+a.pg-selected {
+	border: 1px solid #FFC845;
+	color: #FF8A00;
+	margin: 0 5px;
+	padding: 1px;
+}
+.pg-normaltext {
+	color: #000000 !important;
+	font-size: 11px;
+	margin: 0 5px;
+	padding: 2px;
+}
+a.pg-normal {
+	color: #0D9DDB;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 2px;
+}
+a.pg-normal:hover {
+	color: #FFC845;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 2px;
+}
+.searchMember .tbl .readMore {
+  font-size: 12px;
+}
+.searchMember .tbl td {
+  padding: 8px;
+}
+.searchMember .tbl tr {
+  background: none repeat scroll 0 0 #FFFFFF;
+}
+.searchMember .tbl tr.even {
+	background: none repeat scroll 0 0 #F6F6F6;
+	border:0px solid #ccc !important;
+}
+.addrAlign{
+	vertical-align: top;
+}
+.dsamembernw div label, .dsamembernw div select, .dsamembernw div input {
+	color: #464646;
+	font-weight: 600;
+	margin: 10px;
+}
+/******End:DSA Search member******/
+/******Start:Dsa Member pages*****/
+#wrapper h2 {
+	color: #464646;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 24px;
+}
+.HUSpg .heading {
+	padding: 15px 0;
+	width: 962px;
+}
+.dynamicTabContent h2 {
+	color: #2B2B2B !important;
+	font-size: 20px !important;
+	font-weight: 600 !important;
+	margin: 0;
+	padding: 15px 0;
+}
+.HUSpg .heading span {
+	display: inline;
+	font-family: "Museo 300",Arial;
+	font-size: 12px;
+	font-weight: 600;
+}
+.HUSpg .asof {
+  color: #999999;
+}
+.HUSpg .custDetails .HUStbl {
+	height: 400px;
+	width: 475px;
+}
+.HUStbl {
+	border: 1px solid #CCCCCC;
+	margin-bottom: 10px;
+	text-align: left;
+	width: 100%;
+}
+.HUSpg .holidaySummary .HUStbl {
+	height: 400px;
+	margin-left: 15px;
+	width: 475px;
+}
+.HUSpg .holidaySummary .HUStbl th, .HUSpg .custDetails .HUStbl th {
+  height: 22px;
+}
+.HUStbl th {
+	background: none repeat scroll 0 0 #FFC845;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	text-align: left;
+	border-bottom: 0px solid #CCCCCC;
+}
+.HUStbl .lastColRt {
+	text-align: right;
+	width: 171px;
+}
+.HUStbl tr {
+  background: none repeat scroll 0 0 #FFFFFF;
+}
+.HUStbl tr.even {
+  background: none repeat scroll 0 0 #F6F6F6;
+}
+.HUStbl td {
+	border-top: 1px solid transparent;
+	padding: 8px;
+	vertical-align: top;
+}
+.HUStbl .noOfDays {
+	text-align: right;
+	width: 50px;
+}
+.HUSpg .custDetails .HUStbl .paraHeight {
+	height: 90px;
+	overflow: auto;
+}
+.HUSpg .balanceDays td {
+  border-top: 1px solid #696969;
+}
+.HUStbl .total {
+	border-top: 1px solid #696969;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: right;
+}
+.HUSpg .bookingSteps {
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.bookingSteps {
+  padding: 0;
+}
+.HUSpg .bookingSteps .accordianHeading {
+	background: url("../images/booking_steps_heading_bg.jpg") repeat-x scroll 0 0 transparent;
+	border-right: 1px solid #BBBBBB;
+	border-left: 1px solid #BBBBBB;
+	border-bottom: 1px solid #BBBBBB;
+	height: 22px;
+	padding: 15px 15px 9px;
+	width: 938px;
+}
+
+.HUSpg .bookingSteps .accordianHeading .number {
+	background: url("../images/green_number_bg.png") no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	font-weight: 700;
+	height: 17px;
+	margin: 1px 15px 0 0;
+	text-align: center;
+	width: 17px;
+}
+.moveRight5px {
+  margin-left: 20px;
+}
+.accordian_up {
+	background: url("../images/acc_up.png") no-repeat scroll 0 center transparent;
+	cursor: pointer;
+	height: 18px;
+	width: 18px;
+}
+.accordian_down {
+	background: url("../images/acc_down.png") no-repeat scroll 0 center transparent;
+	cursor: pointer;
+	height: 18px;
+	width: 18px;
+}
+#wrapper .HUSpg .bookingSteps .accordianHeading h2 {
+	color: #2B2B2B !important;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+}
+.HUSpg .bookingSteps .showContent {
+	background: none repeat scroll 0 0 #FAFBFC;
+	border-right:1px solid #D7D7D7;
+	border-left:1px solid #D7D7D7;
+	border-bottom:1px solid #D7D7D7;
+	position: relative;
+	width: 968px;
+}
+.HUSpg .bookingSteps .showContent .section {
+	padding: 15px;
+	width: 938px;
+}
+.HUSpg .bookingNotes {
+  position: relative;
+}
+.HUSpg .bookingNotes p {
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.HUSpg .bookingNotes .HUStbl {
+  width: 300px;
+}
+.HUSpg .bookingSteps .showContent .section .cancellationRule p {
+  padding-bottom: 10px;
+}
+.HUSpg .bookingSteps .showContent .section .positonPR {
+	padding-left: 10px;
+	position: relative;
+}
+.HUSpg .bookingSteps .showContent .section .positonTdR {
+  position: relative;
+}
+.HUSpg .bookingSteps .showContent .section .positonTdR .asterik {
+  left: 286px;
+}
+.displayContract {
+	margin-top: -42px;
+	padding: 10px 0px 0px 0px;
+	border: 1px solid #ccc;
+	border-left: 0px;
+	height: 30px;
+	width: 12%;
+}
+/******End:Dsa Member pages*****/
+/******End:DSA content******/
+
+/******Start:resort Landing styles and left Panel******/
+.leftPanel { 
+	width:200px; 
+	margin-right:3px;
+	margin-top:118px;
+	font-family:"Museo 300",arial; color:#4d4d4d;
+}
+.leftPanelOrange{
+	margin-top:210px !important;
+}
+.rightPanel, .tabs {
+	width: 776px; 
+	position: relative;
+	z-index: 0;
+}
+.rightPanel .topBackground {
+	background: url('../images/resort_top_bg.jpg') no-repeat left top; 
+	padding-top: 10px; 
+	width: 766px;
+}
+.leftPanel #promBannerContainer .promBannerImg {
+	margin-left: 7px;
+	margin-top: 20px;
+	width: 184px;
+}
+.tabs .resortNavWidth { 
+	width: 767px;
+}
+.tabs .resortNav{ 
+	background-color: #FFFFFF; 
+	height: 46px; 
+	border: solid 1px #cccccc; 
+	border-left:none 0px;
+	border-bottom:none 0px;
+}
+.tabs .resortNav { 
+	height: 40px; 
+	clear:both;
+	position: relative; 
+	z-index: 94; 
+	left: 0; 
+	top: 0;  
+	padding-left: 0; 
+	border-bottom:1px solid #ccc; 
+	margin:0px;
+}
+.tabs .resortNav li { 
+	display: inline-block; 
+	height: 40px; 
+	border-left: solid 1px #cccccc; 
+	float:left; 
+	position: relative;
+}
+.tabs .resortNav li img {
+	position: absolute; 
+	right: 0; 
+	top: -15px;
+}
+.tabs .resortNav li .update_display{ 
+	position:absolute; 
+	right:4px; 
+	top:-17px; 
+	color:#FFFFFF; 
+	font-size:10px; 
+	font-weight:bold
+}
+.tabs .resortNav li a { 
+	height: 20px; 
+	color: #333333; 
+	display: inline-block; 
+	font-size: 12px;
+	padding:10px 10px; 
+}
+.tabs .resortNav li a.active, .tabs .resortNav li a:hover { 
+	background-color: #FFC845; 
+	cursor:pointer; 
+	color: #FFFFFF;
+}
+.lastnew{ 
+	border-right: solid 1px #cccccc; 
+}
+/******End:resort Landing styles and left Panel******/
+/******Start:News Ticker component******/
+#newsTickerHolder { 
+	padding-bottom:15px;
+}
+#newsTickerHolder .tickerMid{ 
+	width: 770px; 
+	padding-top: 5px;
+}
+#wrapper #newsTickerHolder #ticker {
+	overflow: hidden;
+	margin: 0px 0 0 0px;
+	width: 840px;
+}
+#wrapper #newsTickerHolder .tickerHeading {
+	padding-left: 30px; 
+	font-weight:600; 
+	color: #232424; 
+	background: url('../images/icon_newpaper.png') no-repeat left top; 
+	margin-left: 10px;
+}
+#wrapper #ticker li {
+	color: #232424;
+}
+#wrapper #newsTickerHolder .tickerContent{
+	font-weight: bold;
+	height: 25px;
+	margin: -5px 0px 0px 0px;
+	width: 925px;
+	color: #000000;
+	background-color: #FFC845;
+	padding: 3px 3px 0px 0px;
+}
+/******End:News Ticker component******/
+
+/******Start:Footer******/
+#footer {
+	border-top: 1px solid #d3d3d3;
+	padding: 4px 0;
+	width: 985px;   
+	height: 180px;
+	margin-top:15px !important;
+	color:#232424;
+	margin:auto;    
+    float: left;
+}
+#footer .footerWrapper {
+	width: 986px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 11px;
+	font-family: "Museo 300",Arial;
+}
+#footer .footerWrapper .newfooterbg{
+	padding:5px 0px 0px 5px;
+}
+.clearbothside{
+	clear:both !important;
+}
+#footer .footerWrapper ul li {
+  float: left;
+}
+#footer .footerWrapper .copyRight {
+	border-top: 1px solid #F0F0F0;
+	clear: left;
+	color: #232424;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+}
+#footer .footerWrapper .veriSignLogo {
+	margin: 0 10px 5px;
+}
+#footer .footerWrapper ul#policy li.first{
+	margin-top: 15px;
+}
+#footer .footerWrapper ul.footerColumn {
+	width: 120px;
+	min-height: 150px; 
+	padding-left: 0px !important;
+}
+#footer .footerWrapper ul.footerColumn li a.mainFooterHeader {
+	color: #000000;
+}
+#footer .footerWrapper ul.footerColumn li a.subCategory {
+	color: #666666;
+}
+#footer .footerWrapper ul.footerColumn li a:hover {
+	text-decoration: underline;
+}
+#footer .footerWrapper ul li.floatNone {
+	float: none;
+}
+#footer .footerShare{
+	margin-left: -125px; 
+	margin-top: 102px;
+}
+/******End:Footer******/
+/******Start:Common Classes******/
+input, select { 
+	font-family: "Museo 300",Arial;
+	font-size: 12px;
+	border: 1px solid #BDBDBD;
+	height: 23px;
+}
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;   
+}
+.clear {
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;    
+}
+a {
+	outline: none;
+	text-decoration: none;     
+}
+object {
+	margin-left: 6px;
+	outline: medium none;
+}
+ol, ul {
+  list-style: none outside none;
+}
+.marginL {
+  margin: 0 0 0 15px;
+}
+.fullWidth {
+  width: 100% !important;
+}
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+.clearfix {
+	display: inline-block;
+}
+#wrapper h1 {
+	color: #434343;
+	font-size: 26px;
+	line-height: 28px;
+	padding-bottom: 10px;
+	margin:0px !important;
+}
+#wrapper h1, #wrapper h2{
+	font-family: "Museo 300","san-serif",Arial,Myriad pro;
+	font-weight: normal;
+}
+.height40{
+	height:40px;
+}
+.marginLeft {
+  margin-left: 190px;
+}
+.bold, p strong, div strong {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.marginB{
+	margin-bottom:10px;
+}
+/******End:Common Classes******/
+/*****Start:Custom select box mask****/
+.selectBox-right, .selectBox-left, .selectBox-label {
+	display:inline-block; 
+	float:left!important;
+}
+.selectBox-left, .selectBox-right{
+	padding:6px 4px; 
+	padding-right:3px;
+}
+.selectBox-left{
+	background: url('../images/inputbox_left.gif') no-repeat right top;
+}
+.selectBox-label{
+	background: url('../images/inputbox_mid.gif') repeat-x left top;
+	padding-bottom:7px!important; 
+	padding-top:6px!important; 
+	width:140px!important; 
+	font-family: "Museo 300",Arial; 
+	border: 0px none; 
+	cursor:pointer;
+}
+.selectBox-dropdown .selectBox-arrow {
+	background: url("../images/selectBox_arrow.gif") no-repeat scroll 0 0 transparent;
+	border: 0 none;
+}
+.selectBox-right{
+	background: url('../images/inputbox_right.gif') no-repeat left top;
+}
+.selectBox-disabled .selectBox-label{
+	color:#4d4d4d;
+}
+/*****End:Custom select box mask****/
+/*****Start:Error message******/
+.validationErrMsg , .feedbackErrMsg {
+	color: #ff4242; 
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.currencyMsg{
+	padding-left: 15px;
+	padding-top: 10px;
+}
+.albumError , .albumEditError, .albumCommentsSuccess{
+	color: #ff4242; 
+	font-size: 10px;
+	font-weight: bold;
+	padding:0 10px;
+}
+#wrapper #header .validationErrMsg ul, .validationErrMsg ul , .feedbackErrMsg ul ,.validationErrMsgReview ul , .validationErrMsgQuery ul{
+	margin: 0 14px 0px 14px;       
+}
+#wrapper #header .validationErrMsg ul {
+	padding: 0;
+}
+.validationErrMsg ul , .feedbackErrMsg  ul , .validationErrMsgReview ul , .validationErrMsgQuery ul{
+	padding: 10px;
+}
+.validationErrorMsg ,  .validationErrMsgReview , .validationErrMsgQuery {
+	color: #ff4242; 
+	font-size: 12px;
+	font-weight: bold;
+}
+.validationsuccessMsg ,.validatioImgRemoved {
+	color: #4CC417; 
+	font-size: 12px;
+	font-weight: bold;
+}
+.validationErrorMsg ul {
+	padding: 10px;
+}
+.validationErrorMsg ul li{
+	background:transparent url('../images/error.png') no-repeat top left;
+	padding-left: 25px;
+}
+.validatioImgRemoved ul{ 
+	padding: 10px 0 0 0;
+}
+#wrapper .errorInput { 
+	border: 1px solid #FF1100;
+}
+#wrapper #header .validationErrMsg ul li, .validationErrMsg ul li , .feedbackErrMsg ul li , .validationErrMsgReview ul li , .validationErrMsgQuery ul li {
+	list-style: disc;
+	float: none;
+}
+.squareType{
+	list-style: square !important;
+}
+
+.formContentFields .errorField input ,.errorField input, .errorField select, .errorField textarea{
+	border: 1px solid red;
+}
+.errResponseDialogContent .actionButtonSmall {  margin-left: 150px;}
+.signUpErr  {
+	color: #ff4242; 
+	font-size: 12px;
+	font-weight: bold;
+}
+.signUpErr ul {
+	padding: 5px 10px 15px;
+}
+.signUpErr ul li{
+	margin-right: 20px;
+	text-align: right;   
+}
+/*****End:Error message*****/
+#cmh-dsa-login-form #edit-submit {
+	background:url('../images/login.png') transparent no-repeat; 
+	width: 89px; 
+	height: 37px;
+	border:0px; 
+    /* background: none repeat scroll 0 0 #FFC845;
+    border: medium none;
+    -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     border-radius: 5px;
+    height: 40px;
+    width: 75px;
+    top: -13px\9; */
+}
+.login-text {
+    font-size: 18px; 
+    position: relative; 
+    left: -63px; 
+    font-weight: bold; 
+    color: #FFFFFF;
+}
+/******Start: Facebox******/
+.fb_large_mid_repeat .formContent {
+	background: url("../images/login_bg.jpg") repeat-x scroll 0 bottom #FFFFFF;
+	padding: 12px;
+	width: 359px;
+}
+.fb_large_mid_repeat .actionButton {
+	float: right;
+	margin: 10px 22px 4px;
+	position: relative;
+}
+.fb_large_mid_repeat .labels {
+	width: 170px;
+	padding-top: 10px;
+}
+.fb_large_mid_repeat label {
+	padding-left: 7px;
+	position: relative;
+	font-weight:normal;
+}
+.fb_large_mid_repeat .txtBoxMask {
+	padding-bottom: 5px;
+}
+.fb_large_mid_repeat .actionButton p{ margin:0;}
+.fb_large_mid_repeat .greyBox_small span.mid {
+	color: #5F5E5E;
+	padding: 2px 10px 0;
+}
+.popup_heading h2{ 
+	font-size:18px; 
+	padding:10px; 
+	text-align: left; 
+	margin:0; 
+	font-weight:normal;
+}
+.popup_heading { 
+	background:#f6f6f6; 
+	height:43px; 
+	border-bottom: 1px solid #E6E6E6;
+}
+#facebox .close {   
+	position: absolute;     
+	right: 6px;    
+	top: 22px;    
+	width: 25px;
+}
+#facebox .fb_large{ 
+	width:394px; 
+	float:left;
+}
+#facebox .fb_large_top{ 
+	background:url('../images/popup_top.png') no-repeat 0 0; 
+	width:394px; 
+	height:12px; 
+	/* Targets IE only */
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='includes/images/popup_top.png', sizingMethod="crop");
+}
+#facebox .fb_large_mid{ 
+	background:url('../images/popup_mid.png') repeat-y 0 0; 
+	width:394px; 
+	float:left; 
+	margin:0; 
+	padding:0;
+	/* Targets IE only */
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='includes/images/popup_mid.png', sizingMethod="crop");
+}
+#facebox .fb_large_bot{ 
+	background:url('../images/popup_bot.png') no-repeat 0 0; 
+	width:394px; 
+	height:9px; 
+	clear:both;
+	/* Targets IE only */
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='includes/images/popup_bot.png', sizingMethod="crop");
+}
+#facebox .fb_large_mid_repeat { 
+	background:#fff;
+	float:left;  
+	margin: 0 4px 0 6px;  
+	width: 383px;
+}
+#facebox {  
+	position: absolute;  
+	top: 0;  
+	left: 0;  
+	z-index: 1500;  
+	text-align: left; 
+	top:25% !important; 
+	vertical-align:middle;
+}
+#facebox .popup {  
+	position: relative;
+}
+#facebox table {  
+	border-collapse: collapse;
+}
+#facebox td {  
+	border-bottom: 0;  
+	padding: 0;
+}
+#facebox .body {  
+	/*padding: 10px;  
+	background: #fff;  
+	width: 710px;*/
+}
+#facebox .loading { 
+	position: absolute;  
+	top: 0;  
+	left: 0;  
+	z-index: 100;  
+	text-align: left; 
+	top:25% !important; 
+	vertical-align:middle; 
+}
+#facebox .image {  
+	text-align: center;
+}
+#facebox img {  
+	border: 0;  
+	margin: 0;
+}
+#facebox .footer {   
+	padding-top: 5px;  
+	margin-top: 10px;  
+	text-align: right;
+}
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {  
+	height: 10px;  
+	width: 10px;  
+	overflow: hidden;  
+	padding: 0;
+}
+#facebox_overlay {  
+	position: fixed;  
+	top: 0px;  
+	left: 0px;  
+	height:100%;  
+	width:100%;
+}
+.facebox_hide {  
+	z-index:-100;
+}
+.facebox_overlayBG { }
+.fbBtn span.mid {
+	font-size: 13px !important;
+	letter-spacing: 0.001em;
+}
+* html #facebox_overlay { /* ie6 hack */
+	position: absolute;
+	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+#facebox .close {   
+	position: absolute;     
+	right: 6px;    
+	top: 20px;    
+	width: 25px;
+}
+#facebox .fb_large_mid_B .close{ 
+	display:none !important;
+}
+.faceboxBooking{ 
+	width:650px; 
+	float:left;
+}
+#facebox .fb_large_top_B{ 
+	background:url('../images/popup_top_Booking.png') no-repeat 0 0; 
+	width:650px; 
+	height:20px; 
+	float:left;
+	/* Targets IE only */
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/popup_top_Booking.png", sizingMethod="crop");
+}
+#facebox .fb_large_mid_B{ 
+	background:url('../images/popup_mid_Booking.png') repeat-y 0 0; 
+	width:650px; 
+	float:left; 
+	margin:0 0 0 0px; 
+	padding:0;
+	/* Targets IE only */
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/popup_mid_Booking.png", sizingMethod="crop");
+}
+#facebox .fb_large_bot_B{ 
+	background:url('../images/popup_bot_Booking.png') no-repeat 0 0;
+	width:650px;
+	height:9px;
+	float:left;
+	/* Targets IE only */
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/popup_bot_Booking.png", sizingMethod="crop");
+}
+#facebox .fbBooking .fb_large_mid_repeat { 
+	background: none repeat scroll 0 0 #FFFFFF;
+	float: left;
+	margin: 0 4px 0 3px;  width: 626px;
+}
+#facebox .fbBooking .fb_large_mid_repeat .popupHeading{
+	margin-left: -4px;
+}
+#facebox .fbBooking { 
+	background:#fff;
+	float:left;  
+	margin: 0 4px 0 12px;  
+	width: 630px;
+}
+#facebox {  
+	position: absolute;  
+	top: 0;  
+	left: 0;  
+	z-index: 1500;  
+	text-align: left; 
+	top:25% !important; 
+	vertical-align:middle;
+}
+#facebox .popup {  
+	position: relative;
+}
+#facebox table {  
+	border-collapse: collapse;
+}
+#facebox td {  
+	border-bottom: 0;  
+	padding: 0;
+}
+#facebox .body {  
+	/*padding: 10px;  
+	background: #fff;  
+	width: 710px;*/
+}
+#facebox .loading { 
+	position: absolute;  
+	top: 0;  
+	left: 0;  
+	z-index: 100;  
+	text-align: left; 
+	top:25% !important; 
+	vertical-align:middle; 
+}
+#facebox .image {  
+	text-align: center;
+}
+#facebox img {  
+	border: 0;  
+	margin: 0;
+}
+#facebox .footer {    
+	padding-top: 5px;  
+	margin-top: 10px;  
+	text-align: right;
+}
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {  
+	height: 10px;  
+	width: 10px;  
+	overflow: hidden;  
+	padding: 0;
+}
+#facebox_overlay {  
+	position: fixed;  
+	top: 0px;  
+	left: 0px;  
+	height:100%;  width:100%;
+}
+.facebox_hide {  
+	z-index:-100;
+}
+.facebox_overlayBG {  
+	background-color: #000;  
+	z-index: 1499;
+}
+* html #facebox_overlay { /* ie6 hack */
+  position: absolute;
+  height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+/******End:Facebox*****/	
+
+/******Start:Forgot Password*****/	
+#myAccount h2, #wrapper #myAccount h3 {
+	color: #0A0909;
+}
+#myAccount h2 {
+	padding: 6px 0 16px;
+}
+#wrapper h2 {
+	color: #464646;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 24px;
+}
+.accountSettingDetails .pdField {
+	padding-bottom: 10px;
+}
+.accountSettingDetails .pdfieldName {
+	float: left;
+	width: 175px;
+}
+.pdfieldName {
+	position: relative;
+}
+.recoverAccess .pdfieldName label {
+	padding-left: 7px;
+	position: relative;
+	font-weight: normal;
+}
+.accountSettingDetails .pdfieldName label {
+	display: inline-block;
+	padding-left: 7px;
+	padding-top: 2px;
+	font-weight: normal;
+}
+.txtBoxMask {
+	position: relative;
+}
+.personalDetails .normtxtbox input, .accountSettingDetails .normtxtbox input {
+	width: 200px;
+}
+input, textarea {
+	border: 1px solid #BDBDBD;
+	margin: 0;
+	outline: medium none;
+	padding: 0;
+}
+.recoverAccess .captcha span {
+	display: block;
+	font-size: 11px;
+	font-style: italic;
+}
+.recoverAccess .captcha img {
+	float: left;
+	height: 35px;
+	width: 75px;
+}
+#myAccount .accountSettingDetails .formButtons {
+	border: medium none;
+}
+#myAccount .bottomButtons {
+	background: url("../images/myAccount_top.jpg") no-repeat scroll left top transparent;
+	border: 0 none;
+	padding-top: 10px;
+	width: 955px;
+}
+#myAccount .formButtons {
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 10px;
+	padding: 12px 10px 12px 0;
+	width: 961px;
+}
+.actionButton, .actionButtonSmall, .actionButton span, .actionButtonSmall span {
+	font-family: "Museo 300","Myriad Pro",Arial;
+}
+.actionButton a, .actionButtonSmall a {
+	color: #FFFFFF;
+}
+.actionButton .left {
+	background-position: left center;
+	width: 10px;
+}
+.actionButton .left, .actionButton .right {
+	background: url("../images/blue_button.png") no-repeat scroll left center transparent;
+}
+.actionButton a span {
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 37px;
+}
+.actionButton, .actionButtonSmall, .actionButton span, .actionButtonSmall span {
+	font-family: "Museo 300","Myriad Pro",Arial;
+}
+#myAccount .actionButton span.middle {
+	padding: 9px 13px;
+}
+.actionButton a span.middle {
+	font-size: 14px;
+	height: 19px;
+}
+.actionButton .middle {
+	background: url("../images/blue_button_mdl.jpg") repeat-x scroll 50% center transparent;
+	padding: 9px 5px;
+}
+.actionButton .right {
+	background-position: right center;
+	width: 10px;
+}
+/******End:Forgot Password*****/	
+/******Start:News Updates Feedback*****/	
+.feedback_sub{
+	width:430px !important;
+}
+.staticContent .dialogBtns {
+	margin: 20px auto;
+	width: 200px;
+}
+.maxlength-feedback {
+	clear: both;
+	color: #646566;
+	font-style: italic;
+	padding-top: 5px;
+}
+.maxlength-full {
+	color: #FF0000;
+	font-weight: bold;
+}
+.actionButtonSmall a span.left {
+	background: url("../images/bluebtnSmall_left.png") no-repeat scroll left top transparent;
+}
+.actionButtonSmall a span.left, .actionButtonSmall a span.right {
+	width: 4px;
+}
+.actionButtonSmall a span {
+	display: block;
+	float: left;
+	height: 25px;
+}
+.actionButton, .actionButtonSmall, .actionButton span, .actionButtonSmall span {
+	font-family: "Museo 300","Myriad Pro",Arial;
+}
+
+.actionButtonSmall a span.mid {
+	background: url("../images/bluebtnSmall_mid.png") repeat-x scroll 0 0 transparent;
+	cursor: pointer;
+	font-size: 12px;
+	height: 17px;
+	padding: 4px 9px;
+}
+.actionButtonSmall a span {
+	display: block;
+	float: left;
+	height: 25px;
+}
+.actionButton, .actionButtonSmall, .actionButton span, .actionButtonSmall span {
+	font-family: "Museo 300","Myriad Pro",Arial;
+}
+.actionButtonSmall a span.right {
+	background: url("../images/bluebtnSmall_right.png") no-repeat scroll right top transparent;
+}
+.actionButtonSmall a span.left, .actionButtonSmall a span.right {
+	width: 4px;
+}
+.actionButtonSmall a span {
+	display: block;
+	float: left;
+	height: 25px;
+}
+.actionButton, .actionButtonSmall, .actionButton span, .actionButtonSmall span {
+	font-family: "Museo 300","Myriad Pro",Arial;
+}
+#TB_ajaxContent {
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: auto !important;
+}
+.diagPopupBox .popupHeading {
+	background: none repeat scroll 0 0 #F6F6F6;
+	border-bottom: 1px solid #E6E6E6;
+	height: 38px;
+}
+.diagPopupBox .dialogMessage {
+	padding: 15px 10px 10px;
+	text-align: center;
+}
+.diagPopupBox .diagBtns, .diagPopupBox .dialogButtons {
+	background: url("../images/recent_updates_top_bg.jpg") no-repeat scroll center top transparent;
+	bottom: 10px;
+	padding-top: 10px;
+	position: absolute;
+	width: 100%;
+}
+.diagPopupBox h2 {
+	color: #070B07;
+	font-family: "Museo 300","Myriad Pro",Arial;
+	font-size: 16px;
+	padding: 12px 10px 10px;
+}
+.diagPopupBox .dialogButtons .actionButtonSmall {
+	margin-top: 0;
+}
+.diagPopupBox .actionButtonSmall {
+	margin: 10px auto 0;
+}
+.actionButton, .actionButtonSmall, .actionButton span, .actionButtonSmall span {
+	font-family: "Museo 300","Myriad Pro",Arial;
+}
+#TB_window .dialogButtons .dialogRightbtn {
+	float: left;
+	margin-left: 20px;
+}
+.greyBox_small {
+	color: #454545;
+	display: block;
+	font-size: 12px;
+}
+#TB_window .dialogButtons .dialogLeftbtn {
+	float: left;
+	margin-left: 125px;
+}
+#TB_window .actionButtonSmall a {
+	color: #FFFFFF;
+	cursor: pointer;
+}
+/******End:News Updates Feedback*****/	
+/******Start:Resort details*****/	
+.dashboard .label {
+	color: #787878;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+.paddingT35 {
+	padding-top: 35px !important;
+}
+/******Start:Resort Carousel*****/
+#resortCarousel { 
+	width: 766px; 
+	height:332px; 
+	border: 1px solid #cccccc; 
+	border-top: none; 
+	overflow: hidden; 
+	position: relative;
+}
+#resortCarousel .slide-reel { 
+	position: relative;
+}
+#resortCarousel .slide-reel li {
+	width: 766px; 
+	float: left;
+}
+#resortCarousel .activeIndicator {
+	position: absolute; 
+	bottom: 8px; 
+	left: 45%;
+}
+#resortCarousel .activeIndicator ul li {
+	background: url('../images/img_indicator.png') no-repeat left bottom; 
+	width: 9px; 
+	height: 9px; 
+	float:left;
+	margin-right: 8px;
+	text-indent: -9999px;
+}
+#resortCarousel .activeIndicator ul li.current {
+	background-position: left top;
+}
+#resortCarousel .cLayerContainer { 
+	padding: 5px 0; 
+	width: 222px; 
+	line-height: 14px; 
+	background-color:#000000; 
+	color:#c8c8c8; 
+	position:absolute; 
+	right:0; 
+	top:240px; 
+	z-index:23;
+}
+#resortCarousel .cLayerContainer .mustVisitImg {
+	width: 26px; 
+	float: left; 
+	padding: 0 8px;
+}
+#resortCarousel .cLayerContainer .mustVisitDesc { 
+	float: right;
+	width:210px; 
+	padding:0 5px;
+}
+#resortCarousel .dwnLayerContainer{
+	margin:5px 0; 
+	position:absolute; 
+	right:5px; 
+	top:290px; z-index:999;
+	width: auto;
+	z-index: 10;
+}
+#resortCarousel .downloads {
+	border-right: 1px solid #a1a1a1;
+}
+.downloadFile  span.mid span.icon{ 
+	background: url('../images/icon_download.gif') no-repeat left top; 
+	width: 13px ; 
+	height: 12px; 
+	margin:4px 5px 0;
+}
+#resortCarousel .resortInfo img { 
+	margin: 4px 6px 0;
+	display:block;
+	float:left;
+}
+#resortCarousel .resortInfo .share img { 
+	margin-top: 2px; 
+	margin-left: 7px;
+}
+#resortCarousel .fbLike {
+	margin:7px 0 0 5px; 
+	background-color: #cccccc;
+}
+/******End:Resort Carousel******/
+/*Each slide Important:    Set the width of your slides If height not specified height will be set by the slide content Set to display block*/
+#slides .slides_container img {
+	width:766px !important;
+	height:332px !important;
+	display:block !important;
+}
+#slides .slides_container a img {
+	display:block !important;
+}
+.slides_img{ 
+	width:766px !important;
+	height:332px !important;
+	display:block !important;
+}
+/*Next/prev buttons*/
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+#slides .next {
+	left:585px;
+}
+#slides .pagination { 
+	bottom: 8px;  
+	left: 42%;   
+	position: absolute; 
+	width:auto;
+	z-index: 1000;
+}
+#slides .pagination li {   
+	float:left;     
+	margin:0 1px;   
+	list-style:none;
+}
+#slides .pagination li a {
+	display:block;
+	width:9px;
+	height:0;
+	padding-top:9px;
+	background-image:url(../images/img_indicator.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+	margin-right: 8px;
+}
+#slides .pagination li.current a {
+	background-position:0 -9px;
+}
+.dsaChangePwd {
+	background: url("../images/top_bg_no_border.png") no-repeat scroll 0 0 #FFFFFF;
+	overflow: hidden;
+}
+.dsaChangePwd .accountSettingDetails h2 {
+	padding: 10px 0;
+	margin-bottom: 5px;
+}
+.factSheet .readMore {
+    margin: 5px 0 0 7px;
+}
+/******End:Resort Details******/
+
+/******Start:Welcome Block******/
+#wrapper .searchMember .topBgNoBorder h2 {
+	margin-bottom: 15px;
+}
+/******End:Welcome Block******/
+/******Start:DSA Availability******/
+.dsaChangePwd .minHeight {
+	min-height: 550px;
+}
+.availContent {
+	margin-top: 65px;
+}
+.bookReg{
+	padding:25px 0 0 0;
+	display:none;
+}
+.gridFieldSetNoBorder{
+    border: 0px solid #CCCCCC;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    padding-left: 20px;
+}
+.gridFieldSet {
+	border: 1px solid #CCCCCC;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	padding-left: 20px;
+}
+.noMargin {
+	margin: 0 !important;
+}
+.availabilityTable {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-weight: 700;
+	margin-top: 10px;
+	text-align: center;
+}
+.roomTypeTable {
+	width: 86px;
+}
+.availabilityTable tr td.firstAvailTD {
+	background-color: #FDCA30;
+	border: 1px solid #DCDCDC;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+.availabilityTable td {
+	border: 1px solid #CCCCCC;
+}
+
+.roomTypeDateTable {
+	max-width: 700px !important;
+}
+
+.availabilityTable th {
+	background-color: #FDCA30;
+	border: 1px solid #DCDCDC;
+	padding-right: 0;
+	text-align: center;
+}
+
+.availabilityTableDiv {
+	color: #FFFFFF;
+	width: 43px;
+}
+.red {
+	background-color: #FF0000 !important;
+	border: 1px solid #CCCCCC !important;
+	color: #000000 !important;
+}
+.red a {
+	color: #000000 !important;
+}
+.blue {
+	background-color: #0DADFC !important;
+	border: 1px solid #CCCCCC !important;
+	color: #000000 !important;
+}
+.blue a {
+	color: #000000 !important;
+}
+.availabilityLegend {
+	padding: 0 3px 12px;
+	width: 767px;
+}
+.availabilityLegend .seasonContainer {
+	margin: 0;
+	width: auto;
+}
+.availabilityLegend div {
+	float: left;
+	height: 10px;
+	margin-top: 5px;
+	width: 10px;
+}
+.availabilityLegend span {
+	background: none repeat scroll 0 0 transparent;
+	color: #464646 !important;
+	float: left;
+	font-family: arial;
+	font-size: 11px;
+	font-weight: 600;
+	height: 18px;
+	padding-bottom: 0 !important;
+	padding-left: 4px;
+	padding-right: 18px;
+	padding-top: 1px;
+	text-align: left;
+}
+.availabilityLegend .purple {
+	background-color: #A10DFF !important;
+	margin-left: 15px;
+}
+.purple {
+	background-color: #7D007D !important;
+	border: 1px solid #CCCCCC !important;
+	color: #FFFFFF !important;
+}
+.availabilityLegend .red {
+	background-color: #FF0D0D !important;
+}
+.red {
+	background-color: #FF0000 !important;
+	border: 1px solid #CCCCCC !important;
+	color: #000000 !important;
+}
+.red {
+	background-color: #FFEBEB;
+	border: 1px solid #B50000;
+}
+.white {
+	border: 1px solid #CCCCCC !important;
+}
+.whiteBox {
+	width: 220px;
+}
+.availabilityLegend .white {
+	background-color: #FFFFFF !important;
+}
+.availabilityLegend div {
+	float: left;
+	height: 10px;
+	margin-top: 5px;
+	width: 10px;
+}
+.availabilityLegend .whiteBox {
+	border: 1px solid #DDDDDD;
+	height: 8px !important;
+	width: 8px !important;
+}
+.blue {
+	background-color: #0DADFC !important;
+	border: 1px solid #CCCCCC !important;
+	color: #000000 !important;
+}
+.blue {
+	background-color: #F0F5FF;
+	border: 1px solid #CEE2F2;
+}
+.availabilityLegend .blue {
+	background-color: #0DADFF !important;
+}
+.availabilityLegend div {
+	float: left;
+	height: 10px;
+	margin-top: 5px;
+	width: 10px;
+}
+.availabilityLegend .seasonContainer {
+	margin: 0;
+	width: auto;
+}
+.availabilityLegend span {
+	background: none repeat scroll 0 0 transparent;
+	color: #464646 !important;
+	float: left;
+	font-family: arial;
+	font-size: 11px;
+	font-weight: 600;
+	height: 18px;
+	padding-bottom: 0 !important;
+	padding-left: 4px;
+	padding-right: 18px;
+	padding-top: 1px;
+	text-align: left;
+}
+.accountSettingDetails input, select {
+	width: 158px;
+}
+#autocomplete {
+  height: auto;
+  max-height: 100px;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#searchkeywordtxtbox #autocomplete {
+  height: auto;
+  max-height: 100px;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 28px !important;
+  left: 10px !important;
+  position: absolute;
+}
+*+html #searchkeywordtxtbox #autocomplete {
+    left: 0px !important;
+}
+.autoTxtFieldDiv{position: relative}
+
+#availabilityLive{
+	border: 1px solid #D3D3D3;
+	padding: 15px 0 15px 0; 
+}
+.margintop30{
+	margin-top:30px;
+}
+/******End:DSA Availability******/
+/******Start:DSA Performance******/
+.extraDegreeUl{
+	list-style: inherit !important;
+}
+
+#insideTabs {
+	display: block;
+	height: 27px;
+	margin-left: -359px;
+	margin-left: -359px\9;
+	margin-right: -535px;
+	margin-top: 15px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	width: 985px;
+}
+#extraDegreeWestTbl{
+	margin-top: 7%;
+}
+#insideTabs a.active {
+	background: none repeat scroll 0 0 #FBC443;
+	color: #FFFFFF;
+}
+#insideTabs a {
+	background: url("../images/myAccTabs_bg.jpg") repeat-x scroll 0 0 #FFFFFF;
+	border-left: none;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: none;
+	color: #000000;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 5px 10px 4px;
+}
+#insideTabs a:first-child {
+  border-left: 1px solid #CCCCCC;
+}
+/*#insideTabs a:last-child {
+  border-right: 1px solid #CCCCCC;
+}*/
+/******End:DSA Performance******/
+.marginTop50 {
+	margin-top: 50px;
+}
+#main_navigation .active-trail {
+  background-color: #FFC845;
+  color: #FFFFFF !important;
+}
+.disc-ul {
+    list-style: disc outside none !important;
+}
